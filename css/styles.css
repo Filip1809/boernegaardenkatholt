@@ -1,0 +1,93 @@
+/* Navbar styling */
+.katholt-navbar {
+  background-color: #006451;
+}
+
+/* Apply Lemon font and black text color to the navbar */
+.katholt-navbar {
+  font-family: 'Lemon', sans-serif;
+  color: black;
+}
+
+.katholt-navbar .nav-link, 
+.katholt-navbar .navbar-brand {
+  color: black !important;
+}
+
+
+.katholt-dropdown-menu {
+  background-color: #f8f9fa; /* Light background for dropdown */
+}
+
+.katholt-dropdown-item {
+  color: black !important;
+}
+
+
+/* Hover effect for dropdown items */
+.navbar .katholt-dropdown-item:hover {
+  background-color: #0F5AE5;
+  color: white;
+}
+
+/* Logo alignment */
+.katholt-logo img {
+  height: 30px;
+}
+
+/* Dropdown menu styling */
+.katholt-dropdown-menu {
+  background-color: #F6FFDB;
+  color: black;
+  border: none;
+}
+
+/* Dropdown links */
+.katholt-dropdown-item {
+  color: black;
+}
+.katholt-dropdown-item:hover {
+  background-color: #E6E6E6;
+  color: #000;
+}
+
+/* Call-to-action button */
+.katholt-indmelding-btn {
+  background-color: #0F5AE5;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.katholt-indmelding-btn:hover {
+  background-color: #1048B4;
+}
+.katholt-indmelding-btn:active {
+  background-color: #002C7B;
+}
+
+/* Mobile hamburger menu toggler */
+.katholt-navbar-toggler {
+  border: none;
+}
+
+/* Footer container */
+.katholt-footer {
+  background-color: #006451;
+  color: #F6FFDB;
+  padding: 20px 0;
+}
+
+/* Footer headings */
+.katholt-footer h5 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Footer text */
+.katholt-footer p {
+  font-size: 14px;
+  margin: 0;
+}
+
