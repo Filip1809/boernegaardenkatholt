@@ -17,7 +17,7 @@
     <!-- Navbar -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark katholt-navbar">
-            <div class="container-fluid m-3">
+            <div class="container"> <!-- Changed container-fluid to container -->
                 <!-- Logo -->
                 <a class="navbar-brand katholt-logo" href="/html/index.html">
                     <img src="/img/logo1.png" alt="Logo af Katholt">
@@ -28,7 +28,7 @@
                 </button>
                 <!-- Navbar content -->
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav mx-auto"> <!-- Added mx-auto for centering -->
                         <!-- Om Katholt with dropdown -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="omKatholt" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -40,43 +40,41 @@
                                 <li><a class="dropdown-item katholt-dropdown-item" href="/html/om-katholt/årsplan.html">Årsplan 2024</a></li>
                             </ul>
                         </li>
-                        <!-- Børnehave with dropdown -->
+                        <!-- Other Dropdown Menus -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="boernehave" role="button" data-bs-toggle="dropdown" aria-expanded="false">Børnehave</a>
+                            <a class="nav-link dropdown-toggle" id="boernehave" role="button" data-bs-toggle="dropdown" aria-expanded="false">Børnehave</a>
                             <ul class="dropdown-menu katholt-dropdown-menu" aria-labelledby="boernehave">
                                 <li><a class="dropdown-item katholt-dropdown-item" href="/html/børnehave/ny-i-børnehaven.html">Ny i børnehaven</a></li>
                                 <li><a class="dropdown-item katholt-dropdown-item" href="/html/børnehave/dagsrytmeboernehaven.html">Dagsrytme i børnehaven</a></li>
                                 <li><a class="dropdown-item katholt-dropdown-item" href="/html/børnehave/kostpolitik.html">Kostpolitik</a></li>
                             </ul>
                         </li>
-                        <!-- Fritidshjem with dropdown -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="fritidshjem" role="button" data-bs-toggle="dropdown" aria-expanded="false">Fritidshjem</a>
-                            <ul class="dropdown-menu katholt-dropdown-menu" aria-labelledby="fritidshjem">
+                            <a class="nav-link dropdown-toggle" id="boernehave" role="button" data-bs-toggle="dropdown" aria-expanded="false">Fritidshjem</a>
+                            <ul class="dropdown-menu katholt-dropdown-menu" aria-labelledby="boernehave">
                                 <li><a class="dropdown-item katholt-dropdown-item" href="/html/fritidshjem/ny-i-fritidshjemmet.html">Ny i fritidshjemmet</a></li>
                                 <li><a class="dropdown-item katholt-dropdown-item" href="/html/fritidshjem/dagsrytmefritidshjem.html">Dagsrytme i fritidshjemmet</a></li>
                             </ul>
                         </li>
-                        <!-- Forældreinfo with dropdown -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="foraeldreinfo" role="button" data-bs-toggle="dropdown" aria-expanded="false">Forældreinfo</a>
-                            <ul class="dropdown-menu katholt-dropdown-menu" aria-labelledby="foraeldreinfo">
+                            <a class="nav-link dropdown-toggle" id="boernehave" role="button" data-bs-toggle="dropdown" aria-expanded="false">Forældreinfo</a>
+                            <ul class="dropdown-menu katholt-dropdown-menu" aria-labelledby="boernehave">
                                 <li><a class="dropdown-item katholt-dropdown-item" href="/html/forældreinfo/forældreinfo.html">Forældreinfo</a></li>
                                 <li><a class="dropdown-item katholt-dropdown-item" href="/html/forældreinfo/åbning-lukketider.html">Åbningstider og lukketider</a></li>
-                                <li><a class="dropdown-item katholt-dropdown-item" href="/html/forældreinfo/stamkortlogin.html">Stamkort login</a></li>
+                                <li><a class="dropdown-item katholt-dropdown-item" href="/html/forældreinfo/stamkortlogin.html">Stamkort Login</a></li>
                                 <li><a class="dropdown-item katholt-dropdown-item" href="/html/forældreinfo/stamkortopret.html">Stamkort oprettelse</a></li>
                                 <li><a class="dropdown-item katholt-dropdown-item" href="/html/forældreinfo/udmeldelse.html">Udmeldelse</a></li>
                                 <li><a class="dropdown-item katholt-dropdown-item" href="/html/forældreinfo/kontakt.html">Kontakt</a></li>
                             </ul>
                         </li>
+                        <!-- Add other dropdowns similarly -->
                     </ul>
                     <!-- Call-to-action button -->
-                    <a href="/html/indmeldelse.html" class="btn katholt-indmelding-btn sm-m-0">Indmelding</a>
+                    <a href="/html/indmeldelse.html" class="btn katholt-indmelding-btn">Indmelding</a>
                 </div>
             </div>
         </nav>
     </header>
-
     <!-- Main Content -->
     <main class="container my-4">
         <header class="mb-2 d-flex header">
