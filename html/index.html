@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex">
     <title>Børnegården Katholt</title>
+    <!-- Imported "lemon" font from "google fonts" -->
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,700;1,400&family=Lemon&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Pridi:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/Styles.css">
+
 </head>
 <body>
-    <!-- Navbar -->
+    <!-- We have taken inspiration from Chatgpt with the Navbar and header, we had it help with various tasks such as connecting the navbar and header together so that they have the same background color. -->
     <header class="katholt-header"> 
         <nav class="navbar navbar-expand-lg katholt-navbar">
             <div class="container">
@@ -38,6 +40,7 @@
                                 <li><a class="dropdown-item katholt-dropdown-item" href="/html/om-katholt/årsplan.html">Årsplan 2024</a></li>
                             </ul>
                         </li>
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="boernehave" role="button" data-bs-toggle="dropdown" aria-expanded="false">Børnehave</a>
                             <ul class="dropdown-menu katholt-dropdown-menu" aria-labelledby="boernehave">
@@ -46,6 +49,7 @@
                                 <li><a class="dropdown-item katholt-dropdown-item" href="/html/børnehave/kostpolitik.html">Kostpolitik</a></li>
                             </ul>
                         </li>
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="boernehave" role="button" data-bs-toggle="dropdown" aria-expanded="false">Fritidshjem</a>
                             <ul class="dropdown-menu katholt-dropdown-menu" aria-labelledby="boernehave">
@@ -70,7 +74,6 @@
                 </div>
             </div>
         </nav>
-        <!-- Main content section directly following the navbar -->
         <section class="container my-4 pt-4">
             <div class="row">
                 <!-- Text Section -->
@@ -86,7 +89,7 @@
                 </div>
                 <!-- Image Section -->
                 <div class="col-12 col-lg-6 text-center">
-                    <img src="/img/monica-sedra-riajHP6CCQU-unsplash.jpg" alt="Billede af et rum i en børnehave" class="rounded-4 w-100 first-picture">
+                    <img src="/img/monica-sedra-riajHP6CCQU-unsplash.jpg" alt="Billede af et rum i en børnehave" class="rounded-4 w-100">
                 </div>
             </div>
         </section>
@@ -104,12 +107,24 @@
                 <a href="/html/om-katholt/om-katholt.html" class="btn btn-om-katholt mt-2">Om Katholt</a>
             </div>
             <div class="col-12 col-lg-6">
-                <img src="/img/IMG_0793.JPG" alt="Billede af børnegården Katholt" class="rounded-4 w-100 second-picture">
+                <img src="/img/IMG_0793.JPG" alt="Billede af børnegården Katholt" class="rounded-4 w-100">
+            </div>
+        </section>
+
+        <section class="row my-5">
+            <div class="col-12 col-lg-6 text-center text-lg-start">
+                <img src="/img/cowomen-hz-6prUpVss-unsplash.jpg" alt="Billede af kollegaer kigge på en computer" class="rounded-4 w-100">
+            </div>
+            <div class="col-12 col-lg-6">
+                <h2>Personale</h2>
+                <p class="lead">
+                    Vores personale er en samling af passionerede og dygtige mennesker, der virkelig brænder for børns udvikling. 
+                    De skaber et trygt og sjovt miljø, hvor børnene kan trives og lære gennem leg.
+                </p>
+                <a href="/html/om-katholt/hvem-er-vi.html" class="btn btn-hvem-er-vi mt-2">Læs mere om os</a>
             </div>
         </section>
     </main>
-
-
 
 
     <!-- Footer -->
