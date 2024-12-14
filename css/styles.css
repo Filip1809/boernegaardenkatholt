@@ -32,17 +32,28 @@ p {
 
 .btn:hover {
   background-color: #1048B4;
+  color: white;
 }
 
 .btn:active {
-  background-color: #002C7B;
+  background-color: #002C7B !important;
 }
 
 /* ==============================
    NAVBAR STYLES
    ============================== */
 
-.katholt-navbar {
+.katholt-navbar-toggler, .navbar-toggler-icon {
+  border-style: none;
+  padding: 0%;
+  background-color: #026E3A;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+   .katholt-navbar {
   background-color: #026E3A;
   font-family: 'Lemon', sans-serif;
   color: black;
@@ -127,40 +138,11 @@ p {
   background-color: #026E3A;
 }
 
-/* Example: Navbar Customizations for [HTML File Name] */
-.katholt-navbar {
-  background-color: transparent;
-}
-
 .katholt-navbar-toggler {
   background-color: #ffffff;
-}
-
-/* Specific Button Styles */
-.btn-børnehave, .btn-fritidshjem, .btn-om-katholt {
-  width: 200px;
-  white-space: nowrap;
-}
-
-/* Section Styling */
-section {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-/* Flexbox Layout */
-.row {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .col-lg-6 {
   padding: 15px;
 }
 
-
-
-#image-section {
-  position: relative;
-  height: 80%;
-}
