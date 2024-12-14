@@ -1,23 +1,60 @@
-/* General styling */
+/* ==============================
+   GLOBAL STYLES
+   ============================== */
+
+/* General Layout */
 body {
   box-sizing: border-box;
   background-color: #F6FFDB;
-  font-family: 'Lora', sans-serif; /* Default font family for the body */
+  font-family: 'Lora', sans-serif;
 }
 
-/* Navbar styling */
+/* Typography */
+h1, h2, h3, h4, h5 {
+  font-family: 'Lemon', sans-serif;
+}
+
+p {
+  font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+}
+
+/* Button Styling */
+.btn {
+  background-color: #0F5AE5;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #1048B4;
+}
+
+.btn:active {
+  background-color: #002C7B;
+}
+
+/* ==============================
+   NAVBAR STYLES
+   ============================== */
+
 .katholt-navbar {
   background-color: #026E3A;
   font-family: 'Lemon', sans-serif;
   color: black;
 }
 
-.katholt-navbar .nav-link, 
+/* Navbar Links */
+.katholt-navbar .nav-link,
 .katholt-navbar .navbar-brand {
   color: black !important;
 }
 
-/* Dropdown Menu Styling */
+/* Navbar Dropdown */
 .katholt-dropdown-menu {
   background-color: #F6FFDB;
   color: black;
@@ -30,28 +67,26 @@ body {
 
 .katholt-dropdown-item:hover {
   background-color: #E6E6E6;
-  color: #000;
 }
 
-/* Navbar hover effect */
-.navbar .katholt-dropdown-item:hover {
+.katholt-navbar .katholt-dropdown-item:hover {
   background-color: #0F5AE5;
   color: white;
 }
 
-/* Logo styling */
+/* Navbar Logo */
 .katholt-logo img {
   height: 30px;
 }
 
-/* Call-to-action button */
+/* Call-to-Action Button */
 .katholt-indmelding-btn {
   background-color: #0F5AE5;
   color: white;
   border: none;
   padding: 10px 20px;
   border-radius: 50px;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease;
 }
 
 .katholt-indmelding-btn:hover {
@@ -62,90 +97,75 @@ body {
   background-color: #002C7B;
 }
 
-/* Footer container */
+/* ==============================
+   FOOTER STYLES
+   ============================== */
+
 .katholt-footer {
   background-color: #026E3A;
   color: #F6FFDB;
   padding: 20px 0;
 }
 
-/* Footer headings */
 .katholt-footer h5 {
   font-size: 18px;
   margin-bottom: 10px;
 }
 
-/* Footer text */
 .katholt-footer p {
   font-size: 14px;
   margin: 0;
 }
 
-/* Typography */
-h1, h2, h3, h4, h5 {
-  font-family: 'Lemon', sans-serif;
+
+/* ==============================
+   PAGE-SPECIFIC STYLES
+   ============================== */
+
+/* Styles for [Index.html] */
+.katholt-header {
+  background-color: #026E3A;
 }
 
-p {
-  font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+/* Example: Navbar Customizations for [HTML File Name] */
+.katholt-navbar {
+  background-color: transparent;
 }
 
-/* Button Styles */
-.btn {
-  background-color: #0F5AE5;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 50px;
-  transition: background-color 0.3s;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  display: inline-block;
+.katholt-navbar-toggler {
+  background-color: #ffffff;
 }
 
-.btn:hover {
-  background-color: #1048B4;
-  color: white;
-}
-
-.btn:active {
-  background-color: #002C7B;
-}
-
-/* Specific Button Length and Styling */
+/* Specific Button Styles */
 .btn-børnehave, .btn-fritidshjem, .btn-om-katholt {
-  width: 200px; /* Adjust button width */
-  white-space: nowrap; /* Prevent text wrapping */
+  width: 200px;
+  white-space: nowrap;
 }
 
-/* Mobile Layout - Full Height Section */
-.vh-100 {
-  height: 100vh;
+/* Section Styling */
+section {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-/* Desktop Layout */
-.row.align-items-center {
+/* Flexbox Layout */
+.row {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .col-lg-6 {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  padding: 15px;
 }
 
-/* Image Section */
+/* Image Styling */
+.first-picture, .second-picture {
+  object-fit: cover;
+  width: 100%;
+  max-height: 400px;
+}
+
 #image-section {
   position: relative;
   height: 80%;
 }
-
-.first-picture,
-.second-picture {
-  object-fit: cover;
-  margin-top: 5px;
-
-}
-
-
