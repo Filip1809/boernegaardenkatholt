@@ -39,6 +39,10 @@ p {
   background-color: #002C7B !important;
 }
 
+.col-lg-6 {
+  padding: 15px;
+}
+
 /* ==============================
    NAVBAR STYLES
    ============================== */
@@ -142,7 +146,31 @@ p {
   background-color: #ffffff;
 }
 
-.col-lg-6 {
-  padding: 15px;
+
+/* Styles for [om-katholt.html] */
+
+.value-box {
+  border: 1px solid #e0e0e0; /* Subtle border */
+  border-radius: 8px; /* Rounded corners */
+  transition: all 0.3s ease-in-out;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 20px; /* Consistent padding */
+  height: 100%; /* Make sure boxes take equal height */
+  min-height: 250px; /* Set a minimum height for consistent box size */
+  font-size: 24px;
 }
+
+.value-box li {
+  line-height: 1.6; /* Increase space between list items */
+  margin-bottom: 0.5rem; /* Adds margin between list items */
+}
+
+/* Hover effect for boxes */
+.value-box:hover {
+  transform: translateY(-5px); /* Lift on hover */
+}
+
+
+
+
 
