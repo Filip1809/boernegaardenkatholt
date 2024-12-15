@@ -3,18 +3,35 @@
    ============================== */
 
 /* General Layout */
-body {
-  box-sizing: border-box;
-  background-color: #F6FFDB;
-  font-family: 'Lora', sans-serif;
+
+html, body {
+  height: 100%; /*  page fills the whole screen vertically */
+  font-family: 'Lora', sans-serif; 
+  background-color: #F6FFDB; 
+  display: flex; /* Flexbox makes it easy to layout the content */
+  flex-direction: column; /* This stacks the elements vertically (header, main content, footer) */
 }
+
+/* Main content stretches to fill the space between header and footer */
+main {
+  flex: 1; /* Makes the main content grow to fill the available space */
+}
+
+/* Footer stays at the bottom of the page */
+footer {
+  position: relative; /* Keeps the footer where it normally is */
+  bottom: 0; /* Positions the footer at the bottom if there's not enough content */
+  width: 100%; /* Ensures the footer stretches across the whole screen */
+}
+
+
 
 /* Typography */
 h1, h2, h3, h4, h5 {
   font-family: 'Lemon', sans-serif;
 }
 
-p {
+p, td, tr {
   font-family: 'Verdana', Geneva, Tahoma, sans-serif;
 }
 
@@ -148,7 +165,6 @@ p {
 
 
 /* Styles for [om-katholt.html] */
-
 .value-box {
   border: 1px solid #e0e0e0; /* Subtle border */
   border-radius: 8px; /* Rounded corners */
@@ -171,6 +187,32 @@ p {
 }
 
 
+/* Styles for [hvem-er-vi.html] */
+/* Styling for the table */
+table {
+  background-color: #F6FFDB; /* Table background color */
+  border-radius: 20px; /* Slight border radius for the entire table */
+
+}
+
+/* Table cell (dates) styling */
+table td {
+  border-radius: 0.3rem; /* Rounded corners for all cells */
+}
+
+/* Specific styling for date cells */
+table td.date-table {
+  background-color: #026E3A; /* Override the background color for date cells */
+  color: white;
+  text-align: center;
+  border-radius: 0.3rem; /* Rounded corners for date cells */
+  font-weight: bold;
+}
+
+/* Styling for table rows on hover */
+table.table-hover tbody tr:hover {
+  background-color: #D3E6D9; /* Light green shade when hovering over rows */
+}
 
 
 
