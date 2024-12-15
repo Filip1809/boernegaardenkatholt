@@ -131,6 +131,7 @@ p, td, tr, label {
 
 .katholt-indmelding-btn:active {
   background-color: #002C7B; /* Even darker blue when clicked */
+  color: white;
 }
 
 /* ==============================
@@ -160,7 +161,9 @@ p, td, tr, label {
    PAGE-SPECIFIC STYLES
    ============================== */
 
-/* Styles for the homepage (index.html) */
+
+   
+/* Styles for (index.html) */
 .katholt-header {
   background-color: #026E3A; /* Green header to match the navbar */
 }
@@ -169,7 +172,9 @@ p, td, tr, label {
   background-color: #ffffff; /* White button for the hamburger menu */
 }
 
-/* Styles for the "About Katholt" page (om-katholt.html) */
+
+
+/* Styles for (om-katholt.html) */
 .value-box {
   border: 1px solid #e0e0e0; /* Light gray border around the box */
   border-radius: 8px; /* Rounded corners */
@@ -191,7 +196,10 @@ p, td, tr, label {
   transform: translateY(-5px); /* Slight lift on hover */
 }
 
-/* Styles for the "Who We Are" page (hvem-er-vi.html) */
+
+
+
+/* Styles for (hvem-er-vi.html) */
 
 /* Table styling */
 table {
@@ -218,7 +226,9 @@ table.table-hover tbody tr:hover {
   background-color: #D3E6D9; /* Light green background on hover */
 }
 
-/* Styles for the "Sign-Up" page (indmeldelse.html) */
+
+
+/* Styles for (indmeldelse.html) */
 
 /* Styling for form sections */
 .form-section {
