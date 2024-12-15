@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -74,13 +74,139 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main class="container my-4">
-        <header class="mb-2 d-flex header">
-            <h1>Velkommen til Børnegården Katholt</h1>
-            
+        <!-- Chatgpt and Linkedin learning video by Clarissa Peterson "HTML & CSS: Creating Forms" helped us put together this form by putting on the correct attributes and structure the form for best practises -->
+        <!-- This part sets up the main container for the form with a margin of 4 units on top and bottom -->
+        <h1 class="text-center my-4">Indmeldelse</h1>
+        <!-- This is the main heading of the page, it's centered with a little margin on top and bottom -->
         
+        <section class="form-section">
+            <!-- This is the section where the form is located -->
+            <div class="form-container">
+                <form class="indmeldelse" method="POST" action="/submit-form">
+                    <!-- We're starting the form, and setting it up to send data to "/submit-form" when submitted -->
+                    <!-- The method POST means we're sending data to the server to process it, not just retrieving info -->
+                    
+                    <!-- Row 1: Information about the child's name and CPR number -->
+                    <div class="row mb-3">
+                        <!-- Row class helps to align the elements, and mb-3 adds a little margin at the bottom -->
+                        <div class="col-md-6">
+                            <!-- This divides the form into columns. col-md-6 means each part takes half the width on medium screens -->
+                            <label for="childName" class="form-label">Barnets navn</label>
+                            <!-- The label is for the child’s name input field, telling the user what to enter -->
+                            <input type="text" class="form-control" id="childName" name="childName" placeholder="Eks: Jens Kristensen" required>
+                            <!-- This is the input field for the child's name, with a placeholder showing an example format -->
+                            <!-- required means the user has to fill this in before submitting the form -->
+                        </div>
+                        <div class="col-md-6">
+                            <label for="childCPR" class="form-label">Barnets CPR</label>
+                            <!-- Label for the child's CPR (social security) number -->
+                            <input type="text" class="form-control" id="childCPR" name="childCPR" placeholder="Eks: 123456-7891" pattern="\d{6}-\d{4}" title="Format: 123456-7891" required>
+                            <!-- This input field is for the CPR number, and it has a pattern to enforce the format "123456-7891" -->
+                            <!-- pattern="\d{6}-\d{4}" ensures the input matches exactly 6 digits, a hyphen, and then 4 digits -->
+                        </div>
+                    </div>
+    
+                    <!-- Row 2: Address and city -->
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="address" class="form-label">Adresse</label>
+                            <input type="text" class="form-control" id="address" name="address" placeholder="Eks: Nørrelundsgade 42" required>
+                            <!-- Address input with a placeholder for the format -->
+                        </div>
+                        <div class="col-md-6">
+                            <label for="city" class="form-label">By</label>
+                            <input type="text" class="form-control" id="city" name="city" placeholder="Eks: Holstebro" required>
+                            <!-- City input with a placeholder for the format -->
+                        </div>
+                    </div>
+    
+                    <!-- Row 3: Mother's name and CPR -->
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="motherName" class="form-label">Mors navn</label>
+                            <input type="text" class="form-control" id="motherName" name="motherName" placeholder="Eks: Helene Kristensen" required>
+                            <!-- Input for mother's name -->
+                        </div>
+                        <div class="col-md-6">
+                            <label for="motherCPR" class="form-label">Mors CPR</label>
+                            <input type="text" class="form-control" id="motherCPR" name="motherCPR" placeholder="Eks: 123456-7892" pattern="\d{6}-\d{4}" title="Format: 123456-7892" required>
+                            <!-- Input for mother's CPR with pattern validation -->
+                        </div>
+                    </div>
+    
+                    <!-- Row 4: Mother's mobile number -->
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="motherMobile" class="form-label">Mors mobil</label>
+                            <input type="tel" class="form-control" id="motherMobile" name="motherMobile" placeholder="Eks: 45 64 87 64" pattern="\d{2} \d{2} \d{2} \d{2}" title="Format: 45 64 87 64" required>
+                            <!-- Telephone input for the mother's mobile number, with pattern validation for the format -->
+                        </div>
+                    </div>
+    
+                    <!-- Row 5: Father's name and CPR -->
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="fatherName" class="form-label">Fars navn</label>
+                            <input type="text" class="form-control" id="fatherName" name="fatherName" placeholder="Eks: Tom Kristensen" required>
+                            <!-- Input for father's name -->
+                        </div>
+                        <div class="col-md-6">
+                            <label for="fatherCPR" class="form-label">Fars CPR</label>
+                            <input type="text" class="form-control" id="fatherCPR" name="fatherCPR" placeholder="Eks: 123456-7893" pattern="\d{6}-\d{4}" title="Format: 123456-7893" required>
+                            <!-- Input for father's CPR number with pattern validation -->
+                        </div>
+                    </div>
+    
+                    <!-- Row 6: Father's mobile number -->
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="fatherMobile" class="form-label">Fars mobil</label>
+                            <input type="tel" class="form-control" id="fatherMobile" name="fatherMobile" placeholder="Eks: 65 89 47 12" pattern="\d{2} \d{2} \d{2} \d{2}" title="Format: 65 89 47 12" required>
+                            <!-- Telephone input for father's mobile number with pattern validation -->
+                        </div>
+                    </div>
+    
+                    <!-- Row 7: Desired start date -->
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="startDate" class="form-label">Ønsket start dato</label>
+                            <input type="date" class="form-control" id="startDate" name="startDate" required>
+                            <!-- Input for the desired start date using a date picker -->
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Yderligere bemærkninger:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                    <!-- Notice Section -->
+                    <p class="notice-text mb-3">
+                        <strong>OBS:</strong> Jeres barn kan ikke optages, hvis I har et andet indmeldelsesforløb i en anden institution.
+                        Udmeldelse i et kommunalt tilbud kan ske på:
+                        <a href="https://www.rksk.dk/digitalpladsanvisning" target="_blank" rel="noopener noreferrer">www.rksk.dk/digitalpladsanvisning</a>
+                    </p>
+                    <!-- A notice at the bottom that provides important information to the user, with a link to another page -->
+                    
+                    <!-- Priority List Section -->
+                    <ul class="priority-list">
+                        <li><span class="dot">●</span> Søskende til nuværende børn i Katholt har første prioritet.</li>
+                        <li><span class="dot">●</span> Børn med tidligere søskende i Katholt har anden prioritet.</li>
+                        <li><span class="dot">●</span> Dernæst tages der anciennitet.</li>
+                    </ul>
+                    <!-- A list of priorities explaining who gets the highest priority -->
+            
+                    <!-- Submit Button -->
+                    <div class="mt-4">
+                        <button type="submit" class="btn btn-primary btn-indmeld">Indmeld</button>
+                        <!-- The submit button that sends the form data to the server -->
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
+    
+    
+    
 
     <!-- Footer -->
     <footer class="text-center text-white katholt-footer">

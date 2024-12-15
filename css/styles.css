@@ -4,215 +4,239 @@
 
 /* General Layout */
 
+/* Setting height to 100% makes sure the page fills up the whole screen vertically */
 html, body {
-  height: 100%; /*  page fills the whole screen vertically */
+  height: 100%; /* This makes the page take up the full screen */
   font-family: 'Lora', sans-serif; 
-  background-color: #F6FFDB; 
-  display: flex; /* Flexbox makes it easy to layout the content */
-  flex-direction: column; /* This stacks the elements vertically (header, main content, footer) */
+  background-color: #F6FFDB;
+  display: flex; /* This is Flexbox, a layout tool that helps us arrange items easily */
+  flex-direction: column; /* This stacks elements vertically, so header, content, and footer will stack up */
 }
 
 /* Main content stretches to fill the space between header and footer */
 main {
-  flex: 1; /* Makes the main content grow to fill the available space */
+  flex: 1; /* This makes the main content stretch to fill up the available space between header and footer */
 }
 
 /* Footer stays at the bottom of the page */
 footer {
-  position: relative; /* Keeps the footer where it normally is */
-  bottom: 0; /* Positions the footer at the bottom if there's not enough content */
-  width: 100%; /* Ensures the footer stretches across the whole screen */
+  position: relative; /* Keeps the footer in its normal position */
+  bottom: 0; /* Pushes the footer to the bottom if there isn't enough content */
+  width: 100%; /* Makes sure the footer stretches across the entire screen */
 }
-
-
 
 /* Typography */
 h1, h2, h3, h4, h5 {
   font-family: 'Lemon', sans-serif;
 }
 
-p, td, tr {
-  font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+p, td, tr, label {
+  font-family: 'Verdana', Geneva, Tahoma, sans-serif; 
 }
 
 /* Button Styling */
 .btn {
-  background-color: #0F5AE5;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 50px;
-  transition: background-color 0.3s ease;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  display: inline-block;
+  background-color: #0F5AE5; 
+  color: white; 
+  border: none; /* No border around the button */
+  padding: 10px 20px; /* Padding inside the button (vertical 10px, horizontal 20px) */
+  border-radius: 50px; /* Rounded button corners */
+  transition: background-color 0.3s ease; /* color change on hover */
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* Same font as text for consistency */
+  display: inline-block; 
 }
 
+/* Hover effect for the button */
 .btn:hover {
-  background-color: #1048B4;
-  color: white;
+  background-color: #1048B4; /* Darker blue when hovered */
+  color: white; /* White text to keep it readable */
 }
 
+/* Active button (when clicked) */
 .btn:active {
-  background-color: #002C7B !important;
+  background-color: #002C7B !important; /* Even darker blue when the button is being pressed */
 }
 
+/* Adding space around the columns in a grid */
 .col-lg-6 {
-  padding: 15px;
+  padding: 15px; /* Padding around the columns */
 }
 
 /* ==============================
    NAVBAR STYLES
    ============================== */
 
+/* Navbar button styles */
 .katholt-navbar-toggler, .navbar-toggler-icon {
-  border-style: none;
-  padding: 0%;
-  background-color: #026E3A;
+  border-style: none; /* No border around the button */
+  padding: 0%; /* No extra padding */
+  background-color: #026E3A; /* Green background */
 }
 
+/* Navbar toggle icon (hamburger menu) */
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Using an SVG icon for the hamburger menu */
 }
 
-   .katholt-navbar {
-  background-color: #026E3A;
-  font-family: 'Lemon', sans-serif;
-  color: black;
+/* Styling the navbar background and text */
+.katholt-navbar {
+  background-color: #026E3A; /* Same green background as the button above */
+  font-family: 'Lemon', sans-serif; /* The same font for the navbar */
+  color: black; /* Black text color */
 }
 
-/* Navbar Links */
+/* Navbar links and brand styling */
 .katholt-navbar .nav-link,
 .katholt-navbar .navbar-brand {
-  color: black !important;
+  color: black !important; /* Forcing links to be black */
 }
 
-/* Navbar Dropdown */
+/* Dropdown menu styles */
 .katholt-dropdown-menu {
-  background-color: #F6FFDB;
-  color: black;
-  border: none;
+  background-color: #F6FFDB; /* Light background for the dropdown */
+  color: black; /* Black text */
+  border: none; /* No borders around the dropdown */
 }
 
 .katholt-dropdown-item {
-  color: black !important;
+  color: black !important; /* forcing text color is black */
 }
 
-.katholt-dropdown-item:hover {
-  background-color: #E6E6E6;
-}
 
+
+/* Special hover effect for dropdown items in the navbar */
 .katholt-navbar .katholt-dropdown-item:hover {
-  background-color: #0F5AE5;
-  color: white;
+  background-color: #0F5AE5; /* Blue background on hover */
+  color: white; /* White text for readability */
 }
 
-/* Navbar Logo */
+/* Navbar logo image size */
 .katholt-logo img {
-  height: 30px;
+  height: 30px; /* logo stays small */
 }
 
-/* Call-to-Action Button */
+/* Call-to-action button styling in the navbar */
 .katholt-indmelding-btn {
-  background-color: #0F5AE5;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 50px;
-  transition: background-color 0.3s ease;
+  background-color: #0F5AE5; /* Blue background */
+  color: white; /* White text */
+  border: none; /* No border */
+  padding: 10px 20px; /* Padding inside the button */
+  border-radius: 50px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* background transition */
 }
 
 .katholt-indmelding-btn:hover {
-  background-color: #1048B4;
+  background-color: #1048B4; /* Darker blue when hovered */
 }
 
 .katholt-indmelding-btn:active {
-  background-color: #002C7B;
+  background-color: #002C7B; /* Even darker blue when clicked */
 }
 
 /* ==============================
    FOOTER STYLES
    ============================== */
 
+/* Footer background and text styling */
 .katholt-footer {
-  background-color: #026E3A;
-  color: #F6FFDB;
-  padding: 20px 0;
+  background-color: #026E3A; /* Green footer */
+  color: #F6FFDB; 
+  padding: 20px 0; /* Padding to give space inside the footer */
 }
 
+/* Footer heading styling */
 .katholt-footer h5 {
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 18px; /* A little larger text for headings */
+  margin-bottom: 10px; /* Adds space below the heading */
 }
 
+/* Footer paragraph styling */
 .katholt-footer p {
-  font-size: 14px;
-  margin: 0;
+  font-size: 14px; /* Smaller text for paragraphs */
+  margin: 0; /* No extra margin, keep it tight */
 }
-
 
 /* ==============================
    PAGE-SPECIFIC STYLES
    ============================== */
 
-/* Styles for [Index.html] */
+/* Styles for the homepage (index.html) */
 .katholt-header {
-  background-color: #026E3A;
+  background-color: #026E3A; /* Green header to match the navbar */
 }
 
 .katholt-navbar-toggler {
-  background-color: #ffffff;
+  background-color: #ffffff; /* White button for the hamburger menu */
 }
 
-
-/* Styles for [om-katholt.html] */
+/* Styles for the "About Katholt" page (om-katholt.html) */
 .value-box {
-  border: 1px solid #e0e0e0; /* Subtle border */
+  border: 1px solid #e0e0e0; /* Light gray border around the box */
   border-radius: 8px; /* Rounded corners */
-  transition: all 0.3s ease-in-out;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 20px; /* Consistent padding */
-  height: 100%; /* Make sure boxes take equal height */
-  min-height: 250px; /* Set a minimum height for consistent box size */
-  font-size: 24px;
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* Consistent font */
+  padding: 20px; /* Padding for spacing inside the box */
+  height: 100%; /* Make sure the boxes fill the available space */
+  min-height: 250px; /* Minimum height for the boxes */
+  font-size: 24px; /* Bigger text for easy reading */
 }
 
 .value-box li {
-  line-height: 1.6; /* Increase space between list items */
-  margin-bottom: 0.5rem; /* Adds margin between list items */
+  line-height: 1.6; /* Adds space between the list items */
+  margin-bottom: 0.5rem; /* Adds a little margin to the bottom of list items */
 }
 
-/* Hover effect for boxes */
+/* Hover effect for the value box */
 .value-box:hover {
-  transform: translateY(-5px); /* Lift on hover */
+  transform: translateY(-5px); /* Slight lift on hover */
 }
 
+/* Styles for the "Who We Are" page (hvem-er-vi.html) */
 
-/* Styles for [hvem-er-vi.html] */
-/* Styling for the table */
+/* Table styling */
 table {
   background-color: #F6FFDB; /* Table background color */
-  border-radius: 20px; /* Slight border radius for the entire table */
-
+  border-radius: 20px; /* Rounded corners for the entire table */
 }
 
-/* Table cell (dates) styling */
+/* Styling the table cells */
 table td {
-  border-radius: 0.3rem; /* Rounded corners for all cells */
+  border-radius: 0.3rem; /* Rounded corners for table cells */
 }
 
-/* Specific styling for date cells */
+/* Styling for date cells in the table */
 table td.date-table {
-  background-color: #026E3A; /* Override the background color for date cells */
-  color: white;
-  text-align: center;
+  background-color: #026E3A; /* Green background for date cells */
+  color: white; /* White text */
+  text-align: center; /* Center the text */
   border-radius: 0.3rem; /* Rounded corners for date cells */
-  font-weight: bold;
+  font-weight: bold; /* Make the text bold */
 }
 
-/* Styling for table rows on hover */
+/* Hover effect for table rows */
 table.table-hover tbody tr:hover {
-  background-color: #D3E6D9; /* Light green shade when hovering over rows */
+  background-color: #D3E6D9; /* Light green background on hover */
 }
 
+/* Styles for the "Sign-Up" page (indmeldelse.html) */
 
+/* Styling for form sections */
+.form-section {
+  margin-bottom: 50px; /* Space below each form section */
+  background-color: #026E3A; /* Green background */
+  color: white; /* White text */
+  border-radius: 20px; /* Rounded corners for form sections */
+  padding: 20px; /* Padding inside the form */
+}
 
+/* Styling for lists inside the form */
+.form-container ul {
+  padding-left: 20px; /* Padding for the list */
+  list-style: none; /* Removes the default list bullets */
+}
+
+/* Styling for dots in the form list */
+.form-container .dot {
+  color: #A02634; /* Dark red for the dots */
+  margin-right: 10px; /* Space between the dot and the text */
+}
