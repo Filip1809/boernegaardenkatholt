@@ -75,81 +75,94 @@
     </header>
 
     <!-- Main Content -->
-    <main class="container my-4">
-        <h1>Vores kostpolitk</h1>
+   <main class="container my-4">
+      <section class="row my-5"> <!-- row of content, with margin at the top and bottom -->
+        <div class="col-12 col-lg-6 order-lg-2"> <!-- Image section, switched position on large screens -->
+            <img src="/img/ekaterina-shakharova-LIcKl0vS8dY-unsplash.jpg" alt="Billede af en pige der spiser" class="rounded-4 w-100"> <!-- Image with rounded corners and full width -->
+        </div>
+        <!-- Text Section -->
+        <div class="col-12 col-lg-6"> <!-- Text section -->
+            <h1>Kostpolitik på katholt</h1> <!-- Heading for the "katholt kospolitik" section -->
+            <p class="lead">
+              Her hos os handler mad om meget mere end at stille sulten. Det er et sted, hvor børn lærer smagsoplevelser, fællesskab og nysgerrighed. 
+              Siden vores start har vi troet på, at gode madvaner grundlægges i børnehøjde med røde kinder, beskidte fingre og masser af glæde. Fra morgenmad til frugtsamling handler det om at give børnene lyst til at udforske nye smagsoplevelser og forstå, hvordan mad kan give dem energi til at lege, lære og vokse.
+            </p>
+            <p class="lead">Hvis du vil vide mere, kan du læse i vores FAQ eller downloade vores fulde Kostpolitik.</p>
+        </div>
+      </section>
+      <section class="FAQ"> <!-- The accordion is inspired from bootstrap, then customized by ourselves -->
+        <h2 clas> Læs videre i vores  FAQ om mad</h2>
         <p class="lead"></p>
         <div class="accordion" id="accordionPanelsStayOpenExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                  Accordion Item #1
-                </button>
-              </h2>
-              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                Hvad er målet med Børnehaven Katholts kostpolitik?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+              <p>Vores kostpolitik handler om at skabe mere end blot måltider. Vi vil give børnene en helhedsorienteret oplevelse, hvor mad handler om meget mere end at stille sulten. Vores mål er at skabe tid og nærvær omkring måltiderne, give børnene et sundt eftermiddagsmåltid og - vigtigst af alt - give dem indsigt i, hvad sund mad betyder for kroppen. Vi vil bevidstgøre børnene om forskellen mellem sundt og usundt, så de får en grundlæggende forståelse for ernæring.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                Hvordan prioriteres måltiderne i børnehaven?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <p>Vores dag er tilrettelagt med faste måltider. Morgenmaden serveres fra kl. 6.30 til 7.30, hvor der er ro og plads til at morgenen ind. Klokken 9.15 samles vi til frugt, hvor børnene selv er aktive - de findeler frugten og fordeler den i grupperne. Frokosten omkring kl. 11.15 serveres med mælk, og her bruger vi tid på hyggesnak. Klokken 14.00 er der fast eftermiddagsmåltid med brød og vand, ofte som en udendørs samling.</p>
               </div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                  Accordion Item #2
-                </button>
-              </h2>
-              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                Hvad er maddage?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <p>Maddage er vores særlige måde at give børnene madoplevelser på. Tre gange om året har vi "smør selv dag", hvor børnene medbringer lidt mad til en fælles frokost, som de tilbereder sammen med de voksne. Ved højtider som påske og jul, og i sundhedsugen, står børnehaven for maden. Fokus er altid på sund mad med masser af grønt og hjemmelavede retter.</p>
               </div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                  Accordion Item #3
-                </button>
-              </h2>
-              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                Hvordan arbejder I med sunde kostvaner?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <p>Sunde kostvaner er en integreret del af vores hverdag. Vores tilgang er praktisk: vi udfordrer børnene gennem idræt, bevægelse i gymnastiksalen, udeliv på legepladsen og ture i skoven. Mad kobles hele tiden med fysisk aktivitet, så børnene oplever sammenhængen mellem kost og kroppen.</p>
               </div>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                    Accordion Item #4
-                  </button>
-                </h2>
-                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                  <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                  </div>
-                </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                Hvordan påvirkes børnene af kostpolitikken?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <p>Vores kostpolitik skaber synlige forandringer hos børnene. De får lyst til at spise varieret kost og smage nye frugter og grøntsager. Børnene begynder at påvirke hinanden med sunde madpakker og sundere valg. De oplever en tydelig sammenhæng mellem sund mad, motion og kroppens bevægelse. Vores mål er, at sunde kostvaner øger børnenes lyst til bevægelse og udeliv, så de får en aktiv og sund hverdag.</p>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                    Accordion Item #5
-                  </button>
-                </h2>
-                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                  <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                  </div>
-                </div>
-              </div>
+            </div>
+          </div>
         </div>
-          <div class="mt-4">
-            <h5 class="mb-3">Se kostpolitikken her:</h5>
-            <a href="#" class="btn btn-kostpoltik-btn" download="kostpolitk.pdf">
-                Download Årsplan 2024
-            </a>
-        </div>
-        
+        <div class="mt-4">
+          <h5 class="mb-3">Se den fulde Kostpolitik her:</h5>
+          <a href="/dokumenter/kostpolitik---smittemodel-1ny.pdf" class="btn btn-kostpolitik" download="kostpolitk.pdf">
+              Download Kostpolitikken
+          </a>
+      </div>
+      </section>
     </main>
 
-    <!-- Footer -->
      <!-- Footer -->
      <footer class="text-center text-white katholt-footer">
         <div class="container py-4">
