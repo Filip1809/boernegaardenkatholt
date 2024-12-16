@@ -199,7 +199,7 @@ p, td, tr, label {
 
 
 
-/* Styles for (hvem-er-vi.html) */
+/* Styles for (årsplan-2024.html) */
 
 /* Table styling */
 table {
@@ -249,4 +249,39 @@ table.table-hover tbody tr:hover {
 .form-container .dot {
   color: #A02634; /* Dark red for the dots */
   margin-right: 10px; /* Space between the dot and the text */
+}
+
+
+/* Styles for (hvem-er-vi.html) */
+
+.custom-img {
+  height: 250px;
+  object-fit: cover;
+  background-color: #f8f9fa;
+  transition: transform 0.3s ease
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card-title {
+  margin-bottom: 5px;
+}
+.card-body {
+  padding: 20px;
+  background-color: #026E3A;
+}
+
+.card-text, h5  {
+  color: white !important;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Lifts the card on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card:hover .custom-img {
+  transform: scale(1.05); /* Slight zoom effect on image */
 }
