@@ -2,6 +2,8 @@
    GLOBAL STYLES
    ============================== */
 
+   
+
 /* General Layout */
 
 /* Setting height to 100% makes sure the page fills up the whole screen vertically */
@@ -22,7 +24,7 @@ main {
 footer {
   position: relative; /* Keeps the footer in its normal position */
   bottom: 0; /* Pushes the footer to the bottom if there isn't enough content */
-  width: 100%; /* Makes sure the footer stretches across the entire screen */
+  width: 100%; /* footer stretches across the entire screen */
 }
 
 /* Typography */
