@@ -287,3 +287,19 @@ table.table-hover tbody tr:hover {
 .card:hover .custom-img {
   transform: scale(1.05); /* Slight zoom effect on image */
 }
+
+/* Styles for (stamkort-login.html) */
+
+.login-form {
+  background-color: #026E3A;
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 500px; /* Increased form width */
+  width: 100%;
+}
+
+
+
+
+
+
