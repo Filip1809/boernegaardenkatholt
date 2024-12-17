@@ -1,6 +1,6 @@
-/* ==============================
-   GLOBAL STYLES
-   ============================== */
+/* ===========================================================================================
+   Global styles
+   =========================================================================================== */
 
    
 
@@ -9,16 +9,13 @@
 /* Setting height to 100% makes sure the page fills up the whole screen vertically */
 html, body {
   height: 100%; /* This makes the page take up the full screen */
-  font-family: 'Lora', sans-serif; 
   background-color: #F6FFDB;
   display: flex; /* This is Flexbox, a layout tool that helps us arrange items easily */
   flex-direction: column; /* This stacks elements vertically, so header, content, and footer will stack up */
 }
 
 /* Main content stretches to fill the space between header and footer */
-main {
-  flex: 1; /* This makes the main content stretch to fill up the available space between header and footer */
-}
+
 
 /* Footer stays at the bottom of the page */
 footer {
@@ -32,7 +29,7 @@ h1, h2, h3, h4, h5 {
   font-family: 'Lemon', sans-serif;
 }
 
-p, td, tr, label {
+p, td, tr, label, .bulletpoint {
   font-family: 'Verdana', Geneva, Tahoma, sans-serif; 
 }
 
@@ -64,9 +61,9 @@ p, td, tr, label {
   padding: 15px; /* Padding around the columns */
 }
 
-/* ==============================
-   NAVBAR STYLES
-   ============================== */
+/* ===========================================================================================
+   NAVBAR-Styles
+   =========================================================================================== */
 
 /* Navbar button styles */
 .katholt-navbar-toggler, .navbar-toggler-icon {
@@ -105,7 +102,6 @@ p, td, tr, label {
 }
 
 
-
 /* Special hover effect for dropdown items in the navbar */
 .katholt-navbar .katholt-dropdown-item:hover {
   background-color: #0F5AE5; /* Blue background on hover */
@@ -136,9 +132,9 @@ p, td, tr, label {
   color: white;
 }
 
-/* ==============================
+/* ===========================================================================================
    FOOTER STYLES
-   ============================== */
+   =========================================================================================== */
 
 /* Footer background and text styling */
 .katholt-footer {
@@ -158,11 +154,9 @@ p, td, tr, label {
   font-size: 14px; /* Smaller text for paragraphs */
   margin: 0; /* No extra margin, keep it tight */
 }
-
-/* ==============================
-   PAGE-SPECIFIC STYLES
-   ============================== */
-
+/* ===========================================================================================
+   Page Specific Styles
+   =========================================================================================== */
 
    
 /* Styles for (index.html) */
@@ -180,12 +174,11 @@ p, td, tr, label {
 .value-box {
   border: 1px solid #e0e0e0; /* Light gray border around the box */
   border-radius: 8px; /* Rounded corners */
-  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+  transition: all 0.3s ease-in-out; /* transition for hover effects */
   font-family: Verdana, Geneva, Tahoma, sans-serif; /* Consistent font */
   padding: 20px; /* Padding for spacing inside the box */
-  height: 100%; /* Make sure the boxes fill the available space */
   min-height: 250px; /* Minimum height for the boxes */
-  font-size: 24px; /* Bigger text for easy reading */
+ 
 }
 
 .value-box li {
@@ -255,7 +248,6 @@ table.table-hover tbody tr:hover {
 
 
 /* Styles for (hvem-er-vi.html) */
-
 .custom-img {
   height: 250px;
   object-fit: cover;
@@ -301,6 +293,31 @@ table.table-hover tbody tr:hover {
   background-color: #026E3A;
   color: white;
   border-radius: 10px;
+}
+
+/* Styles for (ny-i-børnehaven.html) and (ny-i-fritidshjemmet.html) */
+
+.bulletpoint {
+  border-left: 5px solid #026E3A; /* green left border for bulletpoints */
+  padding-left: 15px;
+  background-color: #f8f9fa; 
+  border-radius: 10px; /* rounding of corners */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.bulletpoint:hover {
+  transform: translateX(10px); /* movement on hover */
+  background-color: #A02634; /* red background for hover */
+  color: white;
+}
+
+
+.col-md-6 img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.col-md-6 img:hover {
+  transform: scale(1.05); /* zoom effect  */
+  color: white;
 }
 
 
