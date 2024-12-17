@@ -76,13 +76,53 @@
 
     <!-- Main Content -->
     <main class="container my-4">
-        <header class="mb-2 d-flex header">
-            <h1>Velkommen til Børnegården Katholt</h1>
-            
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h1 class="mb-3">Kontakt os</h1>
+                <p class="mb-4">
+                    Brug venligst vores kontaktside, hvis dit barn er fraværende eller hvis der er andre vigtige oplysninger 
+                    eller spørgsmål, du ønsker at dele med os eller få svar på.
+                </p>
+            </div>
+        </div>
+        <!--Kontakt formular was inspired by chatgpt in terms of alignment of the site, example: flexbox -->
+        <div class="row justify-content-center kontakt-wrapper">
+            <div class="col-md-8 p-4 kontakt-container">
+                <form method="post" action="#">
+                    <!-- Barnets fulde navn -->
+                    <div class="mb-3">
+                        <label for="fulde-navn" class="form-label">Fulde navn:</label>
+                        <input type="text" id="fulde-navn" name="fulde-navn" class="form-control" placeholder="Eks: Emma Johansen">
+                    </div>
         
+                    <!-- E-mail -->
+                    <div class="mb-3">
+                        <label for="email-kontakt" class="form-label">E-mail:</label>
+                        <input type="email" id="email-kontakt" name="email-kontakt" class="form-control" placeholder="Eks: nielskristensen@gmail.com">
+                    </div>
+        
+                    <!-- Telefon nummer -->
+                    <div class="mb-3">
+                        <label for="tel-kontakt" class="form-label">Telefon nummer:</label>
+                        <input type="tel" id="tel-kontakt" name="tel-kontakt" class="form-control" placeholder="54 58 67 84">
+                    </div>
+        
+                    <!-- Besked / Text Area -->
+                    <div class="mb-3">
+                        <label for="besked" class="form-label">Besked:</label>
+                        <textarea id="besked" name="besked" class="form-control" rows="4" placeholder="Skriv din besked her..."></textarea>
+                    </div>
+    
+                    <!-- Submit Button -->
+                    <div>
+                        <button type="submit" class="btn btn-indsend">Indsend</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </main>
+    
 
-    <!-- Footer -->
      <!-- Footer -->
      <footer class="text-center text-white katholt-footer">
         <div class="container py-4">

@@ -85,48 +85,48 @@
                     <!-- Barns CPR-nummer -->
                     <div class="mb-3">
                         <label for="barnCpr" class="form-label">Barns cpr-nummer</label>
-                        <input type="text" id="barnCpr" class="form-control" placeholder="123456-7890" required>
+                        <input type="text" id="barnCpr" class="form-control" name="barnCpr" placeholder="123456-7890" required>
                     </div>
     
                     <!-- Barns Fornavn and Efternavn -->
                     <div class="row mb-3">
                         <div class="col">
                             <label for="barnfornavn" class="form-label">Barns fornavn</label>
-                            <input type="text" id="barnfornavn" class="form-control" placeholder="Emma" required>
+                            <input type="text" id="barnfornavn" class="form-control" name="barnfornavn" placeholder="Emma" required>
                         </div>
                         <div class="col">
                             <label for="barnEfternavn" class="form-label">Barns efternavn</label>
-                            <input type="text" id="barnEfternavn" class="form-control" placeholder="Johansen" required>
+                            <input type="text" id="barnEfternavn" class="form-control" name="barnEfternavn" placeholder="Johansen" required>
                         </div>
                     </div>
     
                     <!-- Indmeldt dato and Gruppe -->
                     <div class="row mb-3">
                         <div class="col">
-                            <label for="indmeldtDato" class="form-label">Indmeldt d.</label>
-                            <input type="date" id="indmeldtDato" class="form-control" required>
+                            <label for="indmeldtDato" class="form-label">Indmeldt dato</label>
+                            <input type="date" id="indmeldtDato" class="form-control" name="indmeldtDato" required>
                         </div>
                         <div class="col">
-                            <label for="gruppe" class="form-label">Gruppe</label>
-                            <input type="text" id="gruppe" class="form-control" placeholder="Vælg..">
+                            <label for="afdeling" class="form-label">Afdeling</label>
+                            <input type="text" id="afdeling" class="form-control" name="afdelilng" placeholder="Vælg..">
                         </div>
                     </div>
     
                     <!-- Dit CPR-nummer -->
                     <div class="mb-3">
                         <label for="ditCpr" class="form-label">Dit cpr-nummer</label>
-                        <input type="text" id="ditCpr" class="form-control" placeholder="654321-7890" required>
+                        <input type="text" id="ditCpr" class="form-control" name="ditCpr" placeholder="654321-7890" required>
                     </div>
     
                     <!-- Dit Fornavn and Efternavn -->
                     <div class="row mb-3">
                         <div class="col">
                             <label for="ditFornavn" class="form-label">Dit fornavn</label>
-                            <input type="text" id="ditFornavn" class="form-control" placeholder="Anders" required>
+                            <input type="text" id="ditFornavn" class="form-control" name="ditFornavn" placeholder="Anders" required>
                         </div>
                         <div class="col">
                             <label for="ditEfternavn" class="form-label">Dit efternavn</label>
-                            <input type="text" id="ditEfternavn" class="form-control" placeholder="Johansen" required>
+                            <input type="text" id="ditEfternavn" class="form-control" name="ditEfternavn" placeholder="Johansen" required>
                         </div>
                     </div>
     
@@ -134,48 +134,48 @@
                     <div class="row mb-3">
                         <div class="col">
                             <label for="mobil" class="form-label">Telefon (mobil)</label>
-                            <input type="tel" id="mobil" class="form-control" placeholder="+4512345678" required>
+                            <input type="tel" id="mobil" class="form-control" name="mobil" placeholder="+4512345678" required>
                         </div>
                         <div class="col">
                             <label for="arbejde" class="form-label">Telefon (arbejde)</label>
-                            <input type="tel" id="arbejde" class="form-control" placeholder="+4587654321">
+                            <input type="tel" id="arbejde" class="form-control" name="arbejde" placeholder="+4587654321">
                         </div>
                     </div>
     
                     <!-- Adresse -->
                     <div class="mb-3">
                         <label for="adresse" class="form-label">Adresse</label>
-                        <input type="text" id="adresse" class="form-control" placeholder="Vejnavn 12" required>
+                        <input type="text" id="adresse" class="form-control" name="adresse" placeholder="Vejnavn 12" required>
                     </div>
     
                     <!-- Postnr and By -->
                     <div class="row mb-3">
                         <div class="col">
                             <label for="postnr" class="form-label">Postnr.</label>
-                            <input type="text" id="postnr" class="form-control" placeholder="7500" required>
+                            <input type="text" id="postnr" class="form-control" name="postnr" placeholder="7500" required>
                         </div>
                         <div class="col">
                             <label for="by" class="form-label">By</label>
-                            <input type="text" id="by" class="form-control" placeholder="Skjern" required>
+                            <input type="text" id="by" class="form-control" name="by" placeholder="Skjern" required>
                         </div>
                     </div>
     
                     <!-- Email -->
                     <div class="mb-3">
                         <label for="email" class="form-label">E-mail</label>
-                        <input type="email" id="email" class="form-control" placeholder="Anders.johansen@gmail.com" required>
+                        <input type="email" id="email" class="form-control" name="email" placeholder="Anders.johansen@gmail.com" required>
                     </div>
     
                     <!-- Email (Gentag) -->
                     <div class="mb-3">
                         <label for="emailRepeat" class="form-label">E-mail (gentag)</label>
-                        <input type="email" id="emailRepeat" class="form-control" placeholder="Indsæt e-mail igen" required>
+                        <input type="email" id="emailRepeat" class="form-control" name="emailRepeat" placeholder="Indsæt e-mail igen" required>
                     </div>
     
                     <!-- Ønsket loginkode -->
                     <div class="mb-3">
                         <label for="loginKode" class="form-label">Ønsket loginkode</label>
-                        <input type="text" id="loginKode" class="form-control" placeholder="56789" required>
+                        <input type="text" id="loginKode" class="form-control" name="loginKode" placeholder="56789" required>
                         <p class="small">(Minimum 5 tegn)</p>
                     </div>
     

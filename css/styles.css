@@ -289,25 +289,19 @@ table.table-hover tbody tr:hover {
 }
 
 /* Styles for (stamkort-login.html) */
-
-.login-form {
-  background-color: #026E3A;
-  padding: 40px;
-  border-radius: 10px;
-  max-width: 500px; /* Increased form width */
-  width: 50%;
-}
-
-
 /* Styles for (stamkort-oprettelse.html) */
-
-.form-container {
+.form-container,  .stamkortlogin {
   background-color: #026E3A;
   border-radius: 10px;
-  
-
 }
 
+
+/* Styles for (kontakt.html) */
+.kontakt-container {
+  background-color: #026E3A;
+  color: white;
+  border-radius: 10px;
+}
 
 
 
