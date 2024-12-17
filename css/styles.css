@@ -295,8 +295,22 @@ table.table-hover tbody tr:hover {
   padding: 40px;
   border-radius: 10px;
   max-width: 500px; /* Increased form width */
-  width: 100%;
+  width: 50%;
 }
+
+
+/* Styles for (stamkort-oprettelse.html) */
+
+.form-container {
+  background-color: #026E3A;
+  border-radius: 10px;
+  
+
+}
+
+
+
+
 
 
 

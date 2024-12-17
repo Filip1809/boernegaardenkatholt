@@ -74,13 +74,59 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
-    <main class="container my-4">
-        <header class="mb-2 d-flex header">
-            <h1>Velkommen til Børnegården Katholt</h1>
-            
-        
-    </main>
+    <!-- Main Content - Chatgpt helped us create the form and we used bootstrap-->
+<main class="container my-5">
+    <h2 class="text-center mb-4">Udmeldelse for Børnegården Katholt</h2>
+    <div class="row justify-content-center form-wrapper">
+        <div class="col-md-8 p-4 rounded-3 form-container text-white">
+            <form>
+                <!-- Barnets fulde navn -->
+                <div class="mb-3">
+                    <label for="barnNavn" class="form-label">Barnets fulde navn:</label>
+                    <input type="text" id="barnNavn" class="form-control" placeholder="Eks: Emma Johansen">
+                </div>
+                <!-- Fødselsdato and Stue -->
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="fodselsdato" class="form-label">Fødselsdato:</label>
+                        <input type="date" id="fodselsdato" class="form-control">
+                    </div>
+                    <div class="col">
+                        <label for="stue" class="form-label">Stue: (Børnehave/Fritidshjem)</label>
+                        <input type="text" id="stue" class="form-control" placeholder="Fritidshjem">
+                    </div>
+                </div>
+                <!-- Sidste dag i institutionen -->
+                <div class="mb-3">
+                    <label for="sidsteDag" class="form-label">Dato for sidste dag i institutionen:</label>
+                    <input type="date" id="sidsteDag" class="form-control">
+                </div>
+                <!-- Forældres navn and E-mailadresse -->
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="foraeldreNavn" class="form-label">Forældres navn:</label>
+                        <input type="text" id="foraeldreNavn" class="form-control" placeholder="Eks: Anders Johansen">
+                    </div>
+                    <div class="col">
+                        <label for="email" class="form-label">E-mailadresse:</label>
+                        <input type="email" id="email" class="form-control" placeholder="Anders.johansen@mail.dk">
+                    </div>
+                </div>
+                <!-- Checkbox -->
+                <div class="form-check mb-3">
+                    <input type="checkbox" id="accept" class="form-check-input">
+                    <label for="accept" class="form-check-label">
+                        Jeg accepterer betingelserne for udmeldelse og er bekendt med institutionens udmeldelsesvarsel.
+                    </label>
+                </div>
+                <!-- Submit Button -->
+                <div class="text-white">
+                    <button type="submit" class="btn btn-udmeldelse">Udmeld</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
 
      <!-- Footer -->
      <footer class="text-center text-white katholt-footer">
