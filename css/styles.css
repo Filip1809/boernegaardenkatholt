@@ -2,27 +2,41 @@
    Global styles
    =========================================================================================== */
 
-   
-
 /* General Layout */
 
-/* Setting height to 100% makes sure the page fills up the whole screen vertically */
+/* We used chatgpt to help us make the footer stick to the bottom and content stack vertically */
 html, body {
   height: 100%; /* This makes the page take up the full screen */
   background-color: #F6FFDB;
-  display: flex; /* This is Flexbox, a layout tool that helps us arrange items easily */
-  flex-direction: column; /* This stacks elements vertically, so header, content, and footer will stack up */
+  display: flex; /* Using Flexbox */
+  flex-direction: column; /* Stacks items vertically */
 }
 
-/* Main content stretches to fill the space between header and footer */
+main {
+  flex-grow: 1; /* main content expands to take up available space */
+}
 
-
-/* Footer stays at the bottom of the page */
+/* Footer styling */
 footer {
-  position: relative; /* Keeps the footer in its normal position */
-  bottom: 0; /* Pushes the footer to the bottom if there isn't enough content */
-  width: 100%; /* footer stretches across the entire screen */
+  background-color: #026E3A; 
+  color: #F6FFDB;
+  padding: 20px 0;
+  width: 100%;
+  position: relative;
+  bottom: 0; /* footer is pushed to the bottom of the page if content is not enough */
 }
+
+/* Footer stays at the bottom */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures full height for the body */
+}
+
+footer {
+  margin-top: auto; /* Pushes footer to the bottom */
+}
+
 
 /* Typography */
 h1, h2, h3, h4, h5 {
@@ -279,8 +293,7 @@ table.table-hover tbody tr:hover {
   transform: scale(1.05); /* Slight zoom effect on image */
 }
 
-/* Styles for (stamkort-login.html) */
-/* Styles for (stamkort-oprettelse.html) */
+/* Styles for (stamkort-login.html) and (stamkort-oprettelse.html) */
 .form-container,  .stamkortlogin {
   background-color: #026E3A;
   border-radius: 10px;
@@ -320,7 +333,7 @@ table.table-hover tbody tr:hover {
 }
 
 
-/* Styles for (dagsrytme-i-fritidshjemmet.html) */
+/* Styles for (dagsrytme-i-fritidshjemmet.html) and (daysrytme-i-fritidshjemmet) */
 
 .green-box {
   background-color: #026E3A; /* Dark Green */
