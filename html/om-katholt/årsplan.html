@@ -76,15 +76,22 @@
         </nav>
     </header>
     <!-- Main Content -->
-     <!-- We used bootstrap classes to make hover and border effects to the table. -->
+    <!-- This section contains the main content of the page. We’re using Bootstrap classes for styling here, like adding hover effects and borders to the table. -->
     <main class="container my-4">
+        <!-- This section is for the "Årsplan 2024" (Annual Plan 2024). We’re using a container to keep the content neat and centered. The "mt-5" class adds a top margin to space things out. -->
         <section class="katholt-arsplan container mt-5">
+            <!-- Header for the section, with a margin at the bottom (mb-4) to add space between the title and the table. -->
             <h1 class="mb-4">Årsplan 2024</h1>
+            <!-- Table section: This is where the events and dates are displayed. We're using Bootstrap's "table-responsive" class to make sure it looks good on mobile devices. -->
             <div class="table-responsive">
+                <!-- Basic Bootstrap table with borders and hover effects. The "table-bordered" adds borders around the table and the "table-hover" makes each row highlight when you hover over it. -->
                 <table class="table table-bordered table-hover">
                     <tbody>
+                        <!-- Each "tr" represents a row in the table. Inside each row, "td" is a table cell. -->
                         <tr>
+                            <!-- This cell shows the date. We’re using classes to style it (white text, centered). "date-table" is a custom class, so it might have additional styling in the CSS. -->
                             <td class="date-table text-white text-center">20. Nov</td>
+                            <!-- This cell shows the event. It's also centered, and we use "text-center" to align the text in the middle. -->
                             <td class="text-center">De store børn øver Lucia optog</td>
                         </tr>
                         <tr>
@@ -127,15 +134,18 @@
                 </table>
             </div>
             <!-- Download Link Section -->
+            <!-- Here we provide a download link for the full year's plan in PDF format. -->
             <div class="mt-4">
+                <!-- Heading for the download link section. Added bottom margin (mb-3) to space things out. -->
                 <h5 class="mb-3 text-dark">Se den fulde Årsplan her:</h5>
+                <!-- The "download" attribute in the link makes the browser download the file when clicked, instead of opening it in the browser. -->
                 <a href="/dokumenter/2243boernehavens-aarsplan-2024.pdf" class="btn btn-download-årsplan text-white" download="årsplan-2024.pdf">
                     Download Årsplan 2024
                 </a>
             </div>
-    
         </section>
     </main>
+
     
 
      <!-- Footer -->

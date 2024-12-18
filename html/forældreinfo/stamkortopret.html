@@ -80,10 +80,11 @@
      <!--Chatgpt helped us setting up the layout and stack the inputs correctly in the form like our high-fidelity prototypes-->
     <main class="container my-4">
         <h1 class="text-center mb-4">Opret dit Stamkort</h1>
-        <div class="row justify-content-center text-white">
-            
+        <div class="row justify-content-center text-white"> <!-- This is the container for the whole form. The "justify-content-center" part centers everything horizontally, 
+            and "text-white" makes sure the text is white. -->
             <div class="col-md-8 p-4 rounded-3 form-container">
-                <form method="post" action="#">
+                <form method="post" action="#"> <!-- The form uses POST to send the data when submitted. The 'action="#"' just means it's not pointing to any 
+                    specific URL yet. -->
                     <!-- Barns CPR-nummer -->
                     <div class="mb-3">
                         <label for="barnCpr" class="form-label">Barns cpr-nummer</label>
@@ -92,6 +93,7 @@
     
                     <!-- Barns Fornavn and Efternavn -->
                     <div class="row mb-3">
+                     <!-- This is for the child's first name. Using 'col' to split it into two columns next to each other. -->
                         <div class="col">
                             <label for="barnfornavn" class="form-label">Barns fornavn</label>
                             <input type="text" id="barnfornavn" class="form-control" name="barnfornavn" placeholder="Emma" required>
@@ -101,7 +103,6 @@
                             <input type="text" id="barnEfternavn" class="form-control" name="barnEfternavn" placeholder="Johansen" required>
                         </div>
                     </div>
-    
                     <!-- Indmeldt dato and Gruppe -->
                     <div class="row mb-3">
                         <div class="col">
@@ -188,9 +189,6 @@
                 </form>
             </div>
         </div>
-            
-            
-        
     </main>
 
    <!-- Footer -->

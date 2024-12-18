@@ -75,64 +75,66 @@
             </div>
         </nav>
     </header>
+    <!-- Main Content - We customized the form ourselves, but chatgpt and bootstrap classes helped us lay out the foundation of the form-->
+    <main class="container my-5">
+        <h1 class="text-center mb-4">Udmeldelse for Børnegården Katholt</h1>
+        <div class="row justify-content-center form-wrapper">
+           <!-- This div creates a row with the 'justify-content-center' class that centers the content horizontally. It ensures that the form is aligned in the middle of the page. 
+            The 'form-wrapper' class is custom -->
 
-<!-- Main Content - Chatgpt helped us create the form and we used bootstrap classes to make the inputs responsive. We customized the form ourselves, but chatgpt helped us lay out the foundation of the form-->
-<main class="container my-5">
-    <h1 class="text-center mb-4">Udmeldelse for Børnegården Katholt</h1>
-    <div class="row justify-content-center form-wrapper">
-        <div class="col-md-8 p-4 rounded-3 form-container text-white">
-            <form metho>
-                <!-- Barnets fulde navn -->
-                <div class="mb-3">
-                    <label for="barnNavn" class="form-label">Barnets fulde navn:</label>
-                    <input type="text" id="barnNavn" class="form-control" name="barnNavn" placeholder="Eks: Emma Johansen">
-                </div>
-                <!-- Fødselsdato and Stue -->
-                <div class="row mb-3">
-                    <div class="col">
-                        <label for="fødselsdagdato" class="form-label">Fødselsdagsdato:</label>
-                        <input type="date" id="fødselsdagsdato" name="fødselsdagsdato" class="form-control">
+            <div class="col-md-8 p-4 rounded-3 form-container text-white">
+             <!-- This column takes up 8/12 of the screen width on medium screens (col-md-8), with padding (p-4) and rounded corners. The form container has white text. -->
+                <form method="post" action="#">
+                    <!-- Barnets fulde navn -->
+                    <div class="mb-3">
+                        <label for="barnNavn" class="form-label">Barnets fulde navn:</label>
+                        <input type="text" id="barnNavn" class="form-control" name="barnNavn" placeholder="Eks: Emma Johansen">
                     </div>
-                    <div class="col">
-                        <label for="stue" class="form-label">Børnehave | Fritidshjem</label>
-                        <input type="text" id="stue" class="form-control" name="stue" placeholder="Fritidshjem">
+                    <!-- Fødselsdato and Stue -->
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="fødselsdagdato" class="form-label">Fødselsdagsdato:</label>
+                            <input type="date" id="fødselsdagsdato" name="fødselsdagsdato" class="form-control">
+                        </div>
+                        <div class="col">
+                            <label for="stue" class="form-label">Børnehave | Fritidshjem</label>
+                            <input type="text" id="stue" class="form-control" name="stue" placeholder="Fritidshjem">
+                        </div>
                     </div>
-                </div>
-                <!-- Sidste dag i institutionen -->
-                <div class="mb-3">
-                    <label for="sidsteDag" class="form-label">Dato for sidste dag i institutionen:</label>
-                    <input type="date" id="sidsteDag" name="sidsteDag" class="form-control">
-                </div>
-                <!-- Forældres navn and E-mailadresse -->
-                <div class="row mb-3">
-                    <div class="col">
-                        <label for="forældreNavn" class="form-label">Navn på forælder:</label>
-                        <input type="text" id="forældreNavn" class="form-control" name="forældreNavn" placeholder="Eks: Anders Johansen">
+                    <!-- Sidste dag i institutionen -->
+                    <div class="mb-3">
+                        <label for="sidsteDag" class="form-label">Dato for sidste dag i institutionen:</label>
+                        <input type="date" id="sidsteDag" name="sidsteDag" class="form-control">
                     </div>
-                    <div class="col">
-                        <label for="email" class="form-label">E-mail:</label>
-                        <input type="email" id="email" class="form-control" name="email" placeholder="Anders.johansen@mail.dk">
+                    <!-- Forældres navn and E-mailadresse -->
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="forældreNavn" class="form-label">Navn på forælder:</label>
+                            <input type="text" id="forældreNavn" class="form-control" name="forældreNavn" placeholder="Eks: Anders Johansen">
+                        </div>
+                        <div class="col">
+                            <label for="email" class="form-label">E-mail:</label>
+                            <input type="email" id="email" class="form-control" name="email" placeholder="Anders.johansen@mail.dk">
+                        </div>
                     </div>
-                </div>
-                <!-- Checkbox -->
-                <div class="form-check mb-3">
-                    <input type="checkbox" id="accept" name="accept" class="form-check-input">
-                    <label for="accept" class="form-check-label">
-                        Jeg accepterer betingelserne for udmeldelse og er bekendt med institutionens udmeldelsesvarsel.
-                    </label>
-                    <input type="checkbox" id="accept" name="accept" class="form-check-input">
-                </div>
-                <!-- Submit Button -->
-                <div class="text-white">
-                    <button type="submit" class="btn btn-udmeldelse">Udmeld</button>
-                </div>
-            </form>
+                    <!-- Checkbox -->
+                    <div class="form-check mb-3">
+                        <input type="checkbox" id="accept" name="accept" class="form-check-input">
+                        <label for="accept" class="form-check-label">
+                            Jeg accepterer betingelserne for udmeldelse og er bekendt med institutionens udmeldelsesvarsel.
+                        </label>
+                        <input type="checkbox" id="accept" name="accept" class="form-check-input">
+                    </div>
+                    <!-- Submit Button -->
+                    <div class="text-white">
+                        <button type="submit" class="btn btn-udmeldelse">Udmeld</button>
+                    </div>
+                </form>
+            </div>
         </div>
-    </div>
-</main>
-
-     <!-- Footer -->
-     <footer class="text-center text-white katholt-footer">
+    </main>
+    <!-- Footer -->
+    <footer class="text-center text-white katholt-footer">
         <div class="container py-4">
             <div class="row">
                 <div class="col-md-4 mb-4">

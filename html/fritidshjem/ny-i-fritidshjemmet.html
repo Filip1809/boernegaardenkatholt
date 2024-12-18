@@ -76,48 +76,66 @@
             </div>
         </nav>
     </header>
-
     <!-- Main Content -->
-     <!-- As described in ny-i-børnehaven.html, we used chatgpt to do the layout and help us import icons from fontawesome-->
+    <!-- As described in ny-i-børnehaven.html, we used chatgpt to do the layout and help us import icons from fontawesome-->
     <main class="container my-4">
-            <div class="container my-5">
-                <div class="row">
-                    <!-- Left Side Content -->
-                    <div class="col-md-6">
-                        <h1 class="mb-4">Ny i fritidshjemmet</h1>
-                        <ul class="list-unstyled">
-                            <li class="mb-3 d-flex align-items-center bulletpoint">
-                                <i class="fas fa-child me-3 text-primary fs-4"></i>
-                                Ude-liv prioriteres højt, da det giver børnene plads til fysisk udfoldelse og positiv energi.
-                            </li>
-                            <li class="mb-3 d-flex align-items-center bulletpoint">
-                                <i class="fas fa-heart me-3 text-danger fs-4"></i>
-                                Samarbejde med forældrene for at give børnene en god og indholdsrig hverdag.
-                            </li>
-                            <li class="mb-3 d-flex align-items-center bulletpoint">
-                                <i class="fas fa-puzzle-piece me-3 text-warning fs-4"></i>
-                                Tryghed er fundamentet, da det fremmer leg, læring, selvtillid og udvikling.
-                            </li>
-                            <li class="mb-3 d-flex align-items-center bulletpoint">
-                                <i class="fas fa-tree me-3 text-success fs-4"></i>
-                                Fritidshjemmet er et godt lege- og læringsmiljø, hvor leg skaber fantasi, sprog, social forståelse og ansvar.
-                            </li>
-                            <li class="mb-3 d-flex align-items-center bulletpoint">
-                                <i class="fas fa-hiking me-3 text-info fs-4"></i>
-                                Fritidshjemmet er et godt lege- og læringsmiljø, hvor leg skaber fantasi, sprog, social forståelse og ansvar.
-                            </li>
-                        </ul>
-                        <p>Se yderligere oplysninger ved at downloade pjecen herunder:</p>
-                        <a href="/dokumenter/2243boernehavens-aarsplan-2024.pdf" class="btn btn-download- text-white" download="årsplan-2024.pdf">
-                            Download Pjece
-                        </a>
-                    </div>
-                    <div class="col-md-6 mt-4">
-                        <img src="/img/dmitry-bukhantsov-RZgQD1tg4_k-unsplash.jpg" alt="Barn i børnehaven" class="img-fluid mt-2 rounded-3 shadow-lg">
-                    </div>
+    <!-- The main content is inside a container with some vertical margin (my-4) for spacing. -->
+        <div class="container my-5">
+            <div class="row">
+            <!-- This is a row that contains two columns. The first column is for text content, and the second is for an image. -->
+                <!-- Left Side Content -->
+                <div class="col-md-6">
+                    <!-- This is a column that takes up 6/12 of the available space (50% of the screen on medium-sized screens and above). -->
+                    <h1 class="mb-4">Ny i fritidshjemmet</h1>
+                    <!-- The title of the section with bottom margin (mb-4) for spacing. -->
+                    <ul class="list-unstyled">
+                        <!-- Unordered list without default styling (list-unstyled). -->
+                        <!-- Each list item is styled to add margin and custom bullet points using Font Awesome icons. -->
+                        <!-- "d-flex" turns the list item into a flex container, so the icon and text will sit next to each other. 
+                          "align-items-center" vertically centers the icon and text so they align. -->
+                        <!-- the <i> tag represents an icon -->
+                        <li class="mb-3 d-flex align-items-center bulletpoint">
+                            <!-- Each list item has a margin at the bottom (mb-3) and is a flex container to align content. -->
+                            <i class="fas fa-child me-3 text-primary fs-4"></i>
+                            <!-- Font Awesome icon with margin-right (me-3), primary color (text-primary), and a font size of fs-4. -->
+                            Ude-liv prioriteres højt, da det giver børnene plads til fysisk udfoldelse og positiv energi.
+                        </li>
+                        <li class="mb-3 d-flex align-items-center bulletpoint">
+                            <i class="fas fa-heart me-3 text-danger fs-4"></i>
+                            Samarbejde med forældrene for at give børnene en god og indholdsrig hverdag.
+                        </li>
+                        <li class="mb-3 d-flex align-items-center bulletpoint">
+                            <i class="fas fa-puzzle-piece me-3 text-warning fs-4"></i>
+                            Tryghed er fundamentet, da det fremmer leg, læring, selvtillid og udvikling.
+                        </li>
+                        <li class="mb-3 d-flex align-items-center bulletpoint">
+                            <i class="fas fa-tree me-3 text-success fs-4"></i>
+                            Fritidshjemmet er et godt lege- og læringsmiljø, hvor leg skaber fantasi, sprog, social forståelse og ansvar.
+                        </li>
+                        <li class="mb-3 d-flex align-items-center bulletpoint">
+                            <i class="fas fa-hiking me-3 text-info fs-4"></i>
+                            Fritidshjemmet er et godt lege- og læringsmiljø, hvor leg skaber fantasi, sprog, social forståelse og ansvar.
+                        </li>
+                    </ul>
+    
+                    <!-- Information about downloading the brochure -->
+                    <p>Se yderligere oplysninger ved at downloade pjecen herunder:</p>
+                    <!-- The download link for the brochure -->
+                    <a href="/dokumenter/2243boernehavens-aarsplan-2024.pdf" class="btn btn-download- text-white" download="årsplan-2024.pdf">
+                        Download Pjece
+                    </a>
+                </div>
+    
+                <!-- Right Side Content (Image) -->
+                <div class="col-md-6 mt-4">
+                    <!-- This is the second column, which also takes up 6/12 of the space on medium-sized screens. -->
+                    <img src="/img/dmitry-bukhantsov-RZgQD1tg4_k-unsplash.jpg" alt="Barn i børnehaven" class="img-fluid mt-2 rounded-3 shadow-lg">
+                    <!-- The image is responsive (img-fluid), has a top margin (mt-2), rounded corners (rounded-3), and a shadow effect (shadow-lg). -->
                 </div>
             </div>
+        </div>
     </main>
+    
 
     <!-- Footer -->
     <footer class="text-center text-white katholt-footer">
