@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex">
     <title>Børnegården Katholt</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,700;1,400&family=Lemon&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Pridi:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -41,13 +40,11 @@
                                 <li><a class="dropdown-item katholt-dropdown-item" href="/html/om-katholt/kostpolitik.html">Kostpolitik</a></li>
                             </ul>
                         </li>
-
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Børnehave</a>
                             <ul class="dropdown-menu katholt-dropdown-menu">
                                 <li><a class="dropdown-item katholt-dropdown-item" href="/html/børnehave/ny-i-børnehaven.html">Ny i børnehaven</a></li>
                                 <li><a class="dropdown-item katholt-dropdown-item" href="/html/børnehave/dagsrytmeboernehaven.html">Dagsrytme i børnehaven</a></li>
-                                
                             </ul>
                         </li>
 
@@ -75,16 +72,136 @@
             </div>
         </nav>
     </header>
-
+    
     <!-- Main Content -->
+    <!-- The accordion and list groups is taken from the bootstrap components and Chatgpt helped us set up the layout-->
     <main class="container my-4">
-        <header class="mb-2 d-flex header">
-            <h1>Velkommen til Børnegården Katholt</h1>
-            
-        
+        <!-- Forældreinfo Section -->
+        <section class="row my-5">
+            <!-- 'row' creates a row for the grid system. 'my-5' adds vertical margin. -->
+            <div class="col-12 col-lg-6 order-lg-2">
+                <!-- 'col-12' takes full width on smaller screens, 'col-lg-6' takes 50% width on large screens. 
+                     'order-lg-2' makes the image appear after the text on large screens. -->
+                <img src="/img/patrick-fore-miAcjhLaWPQ-unsplash.jpg" alt="Billede af et barn der spiser et æble" class="rounded-4 w-100 shadow-lg">
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- 'col-12' and 'col-lg-6' helps text takes full width on small screens and 50% width on large screens. -->
+                <h1 class="mb-4">Forældreinfo</h1>
+                <!-- Accordion for collapsible content -->
+                <div class="accordion" id="parentInfoAccordion">
+                    <!-- 'accordion' class creates the collapsible effect, with an ID to target specific sections. -->
+                    
+                    <!-- Åbningstider -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingHours">
+                            <!-- Accordion header, clickable section to expand/collapse. -->
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHours" aria-expanded="true" aria-controls="collapseHours">
+                                🕒 Åbningstider, lukketider og feriepasning
+                            </button>
+                        </h2>
+                        <div id="collapseHours" class="accordion-collapse collapse show" aria-labelledby="headingHours">
+                            <!-- 'accordion-collapse' contains the collapsible content. 'show' makes it open by default. -->
+                            <div class="accordion-body">
+                                <!-- 'accordion-body' contains the content inside the collapsible section. -->
+                                <p><strong>Fritidshjemmet:</strong> Mandag - Torsdag: kl. 6:30 - 16:30</p>
+                                <p><strong>Børnehaven:</strong> Mandag - Torsdag: kl. 6.30 - 7.45 og 12.50 - 16.00<br>Fredag kl. 6.30 - 16.00</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Lukkedage -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingClosed">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseClosed" aria-expanded="false" aria-controls="collapseClosed">
+                                📅 Lukkedage
+                            </button>
+                        </h2>
+                        <div id="collapseClosed" class="accordion-collapse collapse" aria-labelledby="headingClosed">
+                            <!-- 'collapse' makes it collapsed by default. -->
+                            <div class="accordion-body">
+                                <!-- Content for the closed days. -->
+                                <p><strong>Vi holder lukket:</strong></p>
+                                <ul class="list-group">
+                                    <!-- 'list-group' is used to display items in a clean, consistent way. -->
+                                    <li class="list-group-item">1. Januar</li>
+                                    <li class="list-group-item">5. Juni (Grundlovsdag)</li>
+                                    <li class="list-group-item">24. December (juleaften)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Feriepasning -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingHoliday">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHoliday" aria-expanded="false" aria-controls="collapseHoliday">
+                                🌟 Feriepasning
+                            </button>
+                        </h2>
+                        <div id="collapseHoliday" class="accordion-collapse collapse" aria-labelledby="headingHoliday">
+                            <div class="accordion-body">
+                                <p>Fællespasning med Naturhuset Skovlykke: <strong>fredag efter Kristi Himmelfartsdag</strong>, i uger 29+30 og mellem jul og nytår.</p>
+                                <p><strong>Skovlykke (lige år)</strong> og <strong>Katholt (ulige år)</strong>.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Ferie og Fravær -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingReport">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReport" aria-expanded="false" aria-controls="collapseReport">
+                                📝 Meld ferie eller fravær
+                            </button>
+                        </h2>
+                        <div id="collapseReport" class="accordion-collapse collapse" aria-labelledby="headingReport">
+                            <div class="accordion-body">
+                                <p>Brug vores <a href="/html/forældreinfo/kontakt.html" class="btn btn-kontaktformular">Kontaktformular</a> for at melde ferie, fravær eller tilmeldes fællespasning.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Tøjvalg Section -->
+        <section class="row my-5">
+            <div class="col-12 col-lg-6">
+                <img src="/img/giovanna-karla-zXlR3jKJf6M-unsplash.jpg" alt="Billede af tøj som hænger på et tøjsnor" class="rounded-4 w-100 shadow-sm">
+            </div>
+            <div class="col-12 col-lg-6">
+                <h2 class="mb-3">👕 Tøjvalg</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">🔹 Sørg for, at børnene har tøj til al slags vejr.</li>
+                    <li class="list-group-item">🔹 Hav altid skiftetøj liggende.</li>
+                    <li class="list-group-item">🔹 Fleece-trøje anbefales året rundt.</li>
+                    <li class="list-group-item">🔹 Husk navn i tøjet.</li>
+                    <li class="list-group-item">🔹 Glemt tøj lægges i kommoden ved indgangen og afleveres til genbrug efter en tid.</li>
+                </ul>
+            </div>
+        </section>
+        <!-- Kapacitet Section -->
+        <section class="row my-5">
+            <div class="col-12 col-lg-6 order-lg-2">
+                <img src="/img/la-rel-easter-KuCGlBXjH_o-unsplash.jpg" alt="Billede af et barn der spiser et æble" class="rounded-4 w-100 shadow-sm">
+            </div>
+            <div class="col-12 col-lg-6">
+                <h2 class="mb-3">🏫 Kapacitet</h2>
+                <p><strong>Børnehave:</strong> Plads til 75 børn fordelt i 3 grupper.</p>
+                <ul class="list-group">
+                    <li class="list-group-item">🔸 Hver gruppe har ca. 25 børn.</li>
+                    <li class="list-group-item">🔸 Fast pædagogisk personale tilknyttet hver gruppe.</li>
+                    <li class="list-group-item">🔸 Mindre grupper skaber trygge rammer og stærke relationer.</li>
+                </ul>
+                <p class="mt-3"><strong>Fritidshjem:</strong> Plads til 100 børn fordelt i 4 grupper.</p>
+                <ul class="list-group">
+                    <li class="list-group-item">🔹 Hver gruppe har ca. 25 børn.</li>
+                    <li class="list-group-item">🔹 Aktiviteter tilpasset aldersgrupper og interesser.</li>
+                    <li class="list-group-item">🔹 Fokus på social udvikling og fritid med venner.</li>
+                </ul>
+            </div>
+        </section>
     </main>
-
-
+    
     <!-- Footer -->
     <footer class="text-center text-white katholt-footer">
         <div class="container py-4">
@@ -113,7 +230,6 @@
             </div>
         </div>
     </footer>
-
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

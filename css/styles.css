@@ -264,6 +264,7 @@ table.table-hover tbody tr:hover {
 
 .card-title {
   margin-bottom: 5px;
+  color: white;
 }
 
 .card-body {
@@ -271,8 +272,8 @@ table.table-hover tbody tr:hover {
   background-color: #026E3A;
 }
 
-.card-text, h5  {
-  color: white !important; /* White text for card content */
+.card-text  {
+  color: white /* White text for card content */
 }
 
 .card:hover {
@@ -351,3 +352,7 @@ table.table-hover tbody tr:hover {
       transform: translateY(-5px); /* Moves the element a bit less up */
   }
 }
+
+/* Styles for (forældreinfo.html) */
+
+
