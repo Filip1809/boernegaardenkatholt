@@ -7,62 +7,61 @@
 /* We used chatgpt to help us make the footer stick to the bottom and content stack vertically */
 html, body {
   height: 100%; /* This makes the page take up the full screen */
-  background-color: #F6FFDB;
-  display: flex; /* Using Flexbox */
-  flex-direction: column; /* Stacks items vertically */
+  background-color: #F6FFDB; /* Light background color for the whole page */
+  display: flex; /* Flexbox makes it easier to align and arrange things */
+  flex-direction: column; /* This stacks items vertically (so header, content, footer) */
 }
 
 main {
-  flex-grow: 1; /* main content expands to take up available space */
+  flex-grow: 1; /* Makes sure the main content takes up all available space */
 }
 
 /* Footer styling */
 footer {
   background-color: #026E3A; 
-  color: #F6FFDB;
-  padding: 20px 0;
-  width: 100%;
+  color: #F6FFDB; /* White text on a dark green footer */
+  padding: 20px 0; /* Padding inside the footer for space */
+  width: 100%; /* Makes sure the footer is full width */
   position: relative;
-  bottom: 0; /* footer is pushed to the bottom of the page if content is not enough */
+  bottom: 0; /* Makes the footer stick to the bottom of the page if content is too short */
 }
 
 /* Footer stays at the bottom */
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Ensures full height for the body */
+  min-height: 100vh; /* Ensures the page takes up at least the full height of the viewport */
 }
 
 footer {
-  margin-top: auto; /* Pushes footer to the bottom */
+  margin-top: auto; /* Pushes footer to the bottom of the page */
 }
-
 
 /* Typography */
 h1, h2, h3, h4, h5 {
-  font-family: 'Lemon', sans-serif;
+  font-family: 'Lemon', sans-serif; /* This is the font for all heading tags */
 }
 
 p, td, tr, label, .bulletpoint {
-  font-family: 'Verdana', Geneva, Tahoma, sans-serif; 
+  font-family: 'Verdana', Geneva, Tahoma, sans-serif; /* This font is used for text paragraphs, table cells, etc. */
 }
 
 /* Button Styling */
 .btn {
-  background-color: #0F5AE5; 
-  color: white; 
+  background-color: #0F5AE5; /* Blue background for buttons */
+  color: white; /* White text on the button */
   border: none; /* No border around the button */
-  padding: 10px 20px; /* Padding inside the button (vertical 10px, horizontal 20px) */
-  border-radius: 50px; /* Rounded button corners */
-  transition: background-color 0.3s ease; /* color change on hover */
+  padding: 10px 20px; /* Padding for the button to make it larger */
+  border-radius: 50px; /* Makes the button rounded */
+  transition: background-color 0.3s ease; /* Smooth transition when hovering */
   font-family: Verdana, Geneva, Tahoma, sans-serif; /* Same font as text for consistency */
-  display: inline-block; 
+  display: inline-block; /* Makes the button act like an inline element, so it fits in with text */
 }
 
 /* Hover effect for the button */
 .btn:hover {
-  background-color: #1048B4; /* Darker blue when hovered */
-  color: white; /* White text to keep it readable */
+  background-color: #1048B4; /* Darker blue when you hover over the button */
+  color: white; /* Keeps the text white when hovered */
 }
 
 /* Active button (when clicked) */
@@ -72,7 +71,7 @@ p, td, tr, label, .bulletpoint {
 
 /* Adding space around the columns in a grid */
 .col-lg-6 {
-  padding: 15px; /* Padding around the columns */
+  padding: 15px; /* Adds some space around the columns */
 }
 
 /* ===========================================================================================
@@ -81,19 +80,19 @@ p, td, tr, label, .bulletpoint {
 
 /* Navbar button styles */
 .katholt-navbar-toggler, .navbar-toggler-icon {
-  border-style: none; /* No border around the button */
+  border-style: none; /* Removes the border around the button */
   padding: 0%; /* No extra padding */
   background-color: #026E3A; /* Green background */
 }
 
 /* Navbar toggle icon (hamburger menu) */
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Using an SVG icon for the hamburger menu */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* This is an SVG for the hamburger menu */
 }
 
 /* Styling the navbar background and text */
 .katholt-navbar {
-  background-color: #026E3A; /* Same green background as the button above */
+  background-color: #026E3A; /* Same green background for the navbar */
   font-family: 'Lemon', sans-serif; /* The same font for the navbar */
   color: black; /* Black text color */
 }
@@ -101,30 +100,29 @@ p, td, tr, label, .bulletpoint {
 /* Navbar links and brand styling */
 .katholt-navbar .nav-link,
 .katholt-navbar .navbar-brand {
-  color: black !important; /* Forcing links to be black */
+  color: black !important; /* Forcing links to always be black */
 }
 
 /* Dropdown menu styles */
 .katholt-dropdown-menu {
   background-color: #F6FFDB; /* Light background for the dropdown */
   color: black; /* Black text */
-  border: none; /* No borders around the dropdown */
+  border: none; /* No border around the dropdown */
 }
 
 .katholt-dropdown-item {
-  color: black !important; /* forcing text color is black */
+  color: black !important; /* Forcing dropdown items to be black */
 }
-
 
 /* Special hover effect for dropdown items in the navbar */
 .katholt-navbar .katholt-dropdown-item:hover {
-  background-color: #0F5AE5; /* Blue background on hover */
-  color: white; /* White text for readability */
+  background-color: #0F5AE5; /* Blue background hover effect */
+  color: white; /* White text for better readability */
 }
 
 /* Navbar logo image size */
 .katholt-logo img {
-  height: 30px; /* logo stays small */
+  height: 30px; /* Makes sure the logo is small */
 }
 
 /* Call-to-action button styling in the navbar */
@@ -134,7 +132,7 @@ p, td, tr, label, .bulletpoint {
   border: none; /* No border */
   padding: 10px 20px; /* Padding inside the button */
   border-radius: 50px; /* Rounded corners */
-  transition: background-color 0.3s ease; /* background transition */
+  transition: background-color 0.3s ease; /* Smooth color transition */
 }
 
 .katholt-indmelding-btn:hover {
@@ -152,22 +150,23 @@ p, td, tr, label, .bulletpoint {
 
 /* Footer background and text styling */
 .katholt-footer {
-  background-color: #026E3A; /* Green footer */
-  color: #F6FFDB; 
-  padding: 20px 0; /* Padding to give space inside the footer */
+  background-color: #026E3A; /* Green footer, keeps the theme consistent */
+  color: #F6FFDB; /* Light text color for contrast */
+  padding: 20px 0; /* Padding for spacing inside the footer */
 }
 
 /* Footer heading styling */
 .katholt-footer h5 {
-  font-size: 18px; /* A little larger text for headings */
+  font-size: 18px; /* A bit larger text for headings in the footer */
   margin-bottom: 10px; /* Adds space below the heading */
 }
 
 /* Footer paragraph styling */
 .katholt-footer p {
   font-size: 14px; /* Smaller text for paragraphs */
-  margin: 0; /* No extra margin, keep it tight */
+  margin: 0; /* No extra margin, keeping it compact */
 }
+
 /* ===========================================================================================
    Page Specific Styles
    =========================================================================================== */
@@ -181,60 +180,52 @@ p, td, tr, label, .bulletpoint {
   background-color: #ffffff; /* White button for the hamburger menu */
 }
 
-
-
 /* Styles for (om-katholt.html) */
 .value-box {
   border: 1px solid #e0e0e0; /* Light gray border around the box */
-  border-radius: 8px; /* Rounded corners */
-  transition: all 0.3s ease-in-out; /* transition for hover effects */
-  font-family: Verdana, Geneva, Tahoma, sans-serif; /* Consistent font */
-  padding: 20px; /* Padding for spacing inside the box */
-  min-height: 250px; /* Minimum height for the boxes */
- 
+  border-radius: 8px; /* Rounded corners for the box */
+  transition: all 0.3s ease-in-out; /* smooth transition on hover */
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* Font consistent with text */
+  padding: 20px; /* Padding inside the box */
+  min-height: 250px; /* Minimum height for each box */
 }
 
 .value-box li {
-  line-height: 1.6; /* Adds space between the list items */
-  margin-bottom: 0.5rem; /* Adds a little margin to the bottom of list items */
+  line-height: 1.6; /* More space between list items for readability */
+  margin-bottom: 0.5rem; /* Adds a little margin to the bottom of each list item */
 }
 
 /* Hover effect for the value box */
 .value-box:hover {
-  transform: translateY(-5px); /* Slight lift on hover */
+  transform: translateY(-5px); /* Slight lift effect when you hover */
 }
-
-
-
 
 /* Styles for (årsplan-2024.html) */
 
 /* Table styling */
 table {
-  background-color: #F6FFDB; /* Table background color */
-  border-radius: 20px; /* Rounded corners for the entire table */
+  background-color: #F6FFDB; /* Light background for tables */
+  border-radius: 20px; /* Rounded corners for the table */
 }
 
 /* Styling the table cells */
 table td {
-  border-radius: 0.3rem; /* Rounded corners for table cells */
+  border-radius: 0.3rem; /* Rounded corners for individual cells */
 }
 
 /* Styling for date cells in the table */
 table td.date-table {
   background-color: #026E3A; /* Green background for date cells */
-  color: white; /* White text */
-  text-align: center; /* Center the text */
+  color: white; /* White text for better contrast */
+  text-align: center; /* Centers the text */
   border-radius: 0.3rem; /* Rounded corners for date cells */
-  font-weight: bold; /* Make the text bold */
+  font-weight: bold; /* Makes date text bold */
 }
 
 /* Hover effect for table rows */
 table.table-hover tbody tr:hover {
   background-color: #D3E6D9; /* Light green background on hover */
 }
-
-
 
 /* Styles for (indmeldelse.html) */
 
@@ -243,7 +234,7 @@ table.table-hover tbody tr:hover {
   margin-bottom: 50px; /* Space below each form section */
   background-color: #026E3A; /* Green background */
   color: white; /* White text */
-  border-radius: 20px; /* Rounded corners for form sections */
+  border-radius: 20px; /* Rounded corners */
   padding: 20px; /* Padding inside the form */
 }
 
@@ -256,37 +247,36 @@ table.table-hover tbody tr:hover {
 /* Styling for dots in the form list */
 .form-container .dot {
   color: #A02634; /* Dark red for the dots */
-  margin-right: 10px; /* Space between the dot and the text */
+  margin-right: 10px; /* Adds space between the dot and the text */
 }
-
 
 /* Styles for (hvem-er-vi.html) */
 .custom-img {
   height: 250px;
-  object-fit: cover;
-  background-color: #f8f9fa;
-  transition: transform 0.3s ease
+  object-fit: cover; /* image covers the box without stretching */
+  background-color: #f8f9fa; /* Light background color */
+  transition: transform 0.3s ease; /* Smooth transition when the image is hovered */
 }
 
 .card {
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease; /* Smooth transition on hover */
 }
 
 .card-title {
   margin-bottom: 5px;
 }
+
 .card-body {
   padding: 20px;
   background-color: #026E3A;
 }
 
 .card-text, h5  {
-  color: white !important;
+  color: white !important; /* White text for card content */
 }
 
 .card:hover {
   transform: translateY(-10px); /* Lifts the card on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .card:hover .custom-img {
@@ -299,7 +289,6 @@ table.table-hover tbody tr:hover {
   border-radius: 10px;
 }
 
-
 /* Styles for (kontakt.html) */
 .kontakt-container {
   background-color: #026E3A;
@@ -310,28 +299,26 @@ table.table-hover tbody tr:hover {
 /* Styles for (ny-i-børnehaven.html) and (ny-i-fritidshjemmet.html) */
 
 .bulletpoint {
-  border-left: 5px solid #026E3A; /* green left border for bulletpoints */
+  border-left: 5px solid #026E3A; /* Green left border for bulletpoints */
   padding-left: 15px;
   background-color: #f8f9fa; 
-  border-radius: 10px; /* rounding of corners */
+  border-radius: 10px; /* Rounded corners */
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 .bulletpoint:hover {
-  transform: translateX(10px); /* movement on hover */
-  background-color: #A02634; /* red background for hover */
-  color: white;
+  transform: translateX(10px); /* Moves the bulletpoint to the right when hovered */
+  background-color: #A02634; /* Red background on hover */
+  color: white; /* White text */
 }
-
 
 .col-md-6 img {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .col-md-6 img:hover {
-  transform: scale(1.05); /* zoom effect  */
+  transform: scale(1.05); /* Slight zoom effect when image is hovered */
   color: white;
 }
-
 
 /* Styles for (dagsrytme-i-fritidshjemmet.html) and (daysrytme-i-fritidshjemmet) */
 
@@ -340,34 +327,27 @@ table.table-hover tbody tr:hover {
   color: white;
   padding: 20px;
   border-radius: 10px; 
-  border-left: 5px solid #A52A2A;
+  border-left: 5px solid #A52A2A; /* Brown border for added style */
 }
 
 /* Arrows */
 .text-danger {
-  color: #A52A2A; 
+  color: #A52A2A; /* Red color for danger or warning text */
 }
 
 /* The animations was made with chatgpt. Makes arrows bounce a little bit. */
 .bounce-animation {
-  animation: bounce 1.5s infinite;
+  animation: bounce 1.5s infinite; /* Makes an animation that bounces repeatedly */
 }
 
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
+      transform: translateY(0); /* Keeps the element at its original position at certain times */
   }
   40% {
-      transform: translateY(-10px);
+      transform: translateY(-10px); /* Moves the element up */
   }
   60% {
-      transform: translateY(-5px);
+      transform: translateY(-5px); /* Moves the element a bit less up */
   }
 }
-
-
-
-
-
-
-
