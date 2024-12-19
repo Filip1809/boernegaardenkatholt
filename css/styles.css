@@ -78,6 +78,14 @@ p, td, tr, label, .bulletpoint, .prices, .dagsrytmeboernehaven, .dagsrytmefritid
    NAVBAR-Styles
    =========================================================================================== */
 
+.navbar-nav .nav-item .nav-link {
+  transition: transform 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  transform: translateY(-3px); /* Lift effect */
+}
+
 /* Navbar button styles */
 .katholt-navbar-toggler, .navbar-toggler-icon {
   border-style: none; /* Removes the border around the button */
