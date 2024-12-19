@@ -42,8 +42,8 @@ h1, h2, h3, h4, h5 {
   font-family: 'Lemon', sans-serif; /* This is the font for all heading tags */
 }
 
-p, td, tr, label, .bulletpoint {
-  font-family: 'Verdana', Geneva, Tahoma, sans-serif; /* This font is used for text paragraphs, table cells, etc. */
+p, td, tr, label, .bulletpoint, .prices, .dagsrytmeboernehaven, .dagsrytmefritidshjemmet, .list-group {
+  font-family: 'Verdana', Geneva, Tahoma, sans-serif; 
 }
 
 /* Button Styling */
