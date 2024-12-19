@@ -171,7 +171,10 @@ p, td, tr, label, .bulletpoint {
    Page Specific Styles
    =========================================================================================== */
 
+
+   
 /* Styles for (index.html) */
+
 .katholt-header {
   background-color: #026E3A; /* Green header to match the navbar */
 }
@@ -180,7 +183,10 @@ p, td, tr, label, .bulletpoint {
   background-color: #ffffff; /* White button for the hamburger menu */
 }
 
+
+
 /* Styles for (om-katholt.html) */
+
 .value-box {
   border: 1px solid #e0e0e0; /* Light gray border around the box */
   border-radius: 8px; /* Rounded corners for the box */
@@ -227,6 +233,8 @@ table.table-hover tbody tr:hover {
   background-color: #D3E6D9; /* Light green background on hover */
 }
 
+
+
 /* Styles for (indmeldelse.html) */
 
 /* Styling for form sections */
@@ -250,7 +258,10 @@ table.table-hover tbody tr:hover {
   margin-right: 10px; /* Adds space between the dot and the text */
 }
 
+
+
 /* Styles for (hvem-er-vi.html) */
+
 .custom-img {
   height: 250px;
   object-fit: cover; /* image covers the box without stretching */
@@ -284,7 +295,10 @@ table.table-hover tbody tr:hover {
   transform: scale(1.05); /* Slight zoom effect on image */
 }
 
+
+
 /* Styles for (stamkort-login.html) and (stamkort-oprettelse.html) */
+
 .form-container,  .stamkortlogin {
   background-color: #026E3A;
   border-radius: 10px;
@@ -296,6 +310,8 @@ table.table-hover tbody tr:hover {
   color: white;
   border-radius: 10px;
 }
+
+
 
 /* Styles for (ny-i-børnehaven.html) and (ny-i-fritidshjemmet.html) */
 
@@ -320,6 +336,8 @@ table.table-hover tbody tr:hover {
   transform: scale(1.05); /* Slight zoom effect when image is hovered */
   color: white;
 }
+
+
 
 /* Styles for (dagsrytme-i-fritidshjemmet.html) and (daysrytme-i-fritidshjemmet) */
 
@@ -353,6 +371,5 @@ table.table-hover tbody tr:hover {
   }
 }
 
-/* Styles for (forældreinfo.html) */
 
 
