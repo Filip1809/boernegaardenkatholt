@@ -14,11 +14,11 @@
 </head>
 <body>
     <!-- Dark Mode Toggle Button -->
-    <button id="darkModeToggle">Toggle Dark Mode</button>
+    <button id="darkModeToggle" aria-label="Toggle Dark Mode">Toggle Dark Mode</button>
 
     <!-- Navbar -->
     <header class="katholt-header">
-        <nav class="navbar navbar-expand-lg katholt-navbar">
+        <nav class="navbar navbar-expand-lg katholt-navbar" role="navigation" aria-label="Main Navigation">
             <div class="container">
                 <!-- Logo -->
                 <a class="navbar-brand katholt-logo" href="/index.html">
@@ -36,7 +36,7 @@
                             <a class="nav-link dropdown-toggle" id="omKatholt" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Om Katholt
                             </a>
-                            <ul class="dropdown-menu katholt-dropdown-menu">
+                            <ul class="dropdown-menu katholt-dropdown-menu" aria-labelledby="omKatholt">
                                 <li><a class="dropdown-item katholt-dropdown-item" href="/html/om-katholt/om-katholt.html">Om Katholt</a></li>
                                 <li><a class="dropdown-item katholt-dropdown-item" href="/html/om-katholt/hvem-er-vi.html">Hvem er vi?</a></li>
                                 <li><a class="dropdown-item katholt-dropdown-item" href="/html/om-katholt/årsplan.html">Årsplan 2024</a></li>
@@ -88,53 +88,53 @@
             <div class="col-lg-8 mb-4">
                 <!-- Morgen Section -->
                 <div class="green-box mb-4 shadow-lg p-4 rounded">
-                    <h5 class="mb-3"><i class="fas fa-sun me-2 text-warning"></i>Morgen</h5>
+                    <h2 class="mb-3"><i class="fas fa-sun me-2 text-warning" aria-hidden="true"></i>Morgen</h2>
                     <ul class="list-unstyled">
-                        <li class="dagsrytmeboernehaven"><i class="fas fa-check-circle text-danger me-2"></i>6:30-7:10 Fælles morgenmad med cornflakes, havregryn, havregrød, A38.</li>
-                        <li class="dagsrytmeboernehaven"><i class="fas fa-check-circle text-warning me-2"></i>7:30 Leg på tværs af grupperne, men de voksne fordeler sig i huset.</li>
+                        <li class="dagsrytmeboernehaven"><i class="fas fa-check-circle text-danger me-2" aria-hidden="true"></i>6:30-7:10 Fælles morgenmad med cornflakes, havregryn, havregrød, A38.</li>
+                        <li class="dagsrytmeboernehaven"><i class="fas fa-check-circle text-warning me-2" aria-hidden="true"></i>7:30 Leg på tværs af grupperne, men de voksne fordeler sig i huset.</li>
                     </ul>
                 </div>
     
                 <!-- Arrow -->
                 <div class="text-center mb-3 text-danger fs-3">
-                    <i class="fas fa-arrow-down bounce-animation"></i>
+                    <i class="fas fa-arrow-down bounce-animation" aria-hidden="true"></i>
                 </div>
     
                 <!-- Formiddag Section -->
                 <div class="green-box mb-4 shadow-lg p-4 rounded">
-                    <h5 class="mb-3"><i class="fas fa-child me-2 text-info"></i>Formiddag</h5>
+                    <h2 class="mb-3"><i class="fas fa-child me-2 text-info" aria-hidden="true"></i>Formiddag</h2>
                     <ul class="list-unstyled">
-                        <li class="dagsrytmeboernehaven"><i class="fas fa-check-circle text-warning me-2"></i>8:00-9:00 Leg i gymnastiksalen med en voksen.</li>
-                        <li class="dagsrytmeboernehaven"><i class="fas fa-check-circle text-danger me-2"></i>9:00-11:30 Aktiviteter i grupper med frugtspisning, samling, sange og lege.</li>
+                        <li class="dagsrytmeboernehaven"><i class="fas fa-check-circle text-warning me-2" aria-hidden="true"></i>8:00-9:00 Leg i gymnastiksalen med en voksen.</li>
+                        <li class="dagsrytmeboernehaven"><i class="fas fa-check-circle text-danger me-2" aria-hidden="true"></i>9:00-11:30 Aktiviteter i grupper med frugtspisning, samling, sange og lege.</li>
                     </ul>
                 </div>
     
                 <!-- Arrow -->
                 <div class="text-center mb-3 text-danger fs-3">
-                    <i class="fas fa-arrow-down bounce-animation"></i>
+                    <i class="fas fa-arrow-down bounce-animation" aria-hidden="true"></i>
                 </div>
     
                 <!-- Frokost Section -->
                 <div class="green-box mb-4 shadow-lg p-4 rounded">
-                    <h5 class="mb-3"><i class="fas fa-utensils me-2 text-primary"></i>Frokost</h5>
+                    <h2 class="mb-3"><i class="fas fa-utensils me-2 text-primary" aria-hidden="true"></i>Frokost</h2>
                     <ul class="list-unstyled">
-                        <li class="dagsrytmeboernehaven"><i class="fas fa-check-circle text-warning me-2"></i>11:30 Frokost med mælk, efterfulgt af leg i den friske luft.</li>
-                        <li class="dagsrytmeboernehaven"><i class="fas fa-check-circle text-danger me-2"></i>14:00 Brød spises på legepladsen, efterfulgt af leg på tværs af grupperne.</li>
+                        <li class="dagsrytmeboernehaven"><i class="fas fa-check-circle text-warning me-2" aria-hidden="true"></i>11:30 Frokost med mælk, efterfulgt af leg i den friske luft.</li>
+                        <li class="dagsrytmeboernehaven"><i class="fas fa-check-circle text-danger me-2" aria-hidden="true"></i>14:00 Brød spises på legepladsen, efterfulgt af leg på tværs af grupperne.</li>
                     </ul>
                 </div>
     
                 <!-- Arrow -->
                 <div class="text-center mb-3 text-danger fs-3">
-                    <i class="fas fa-arrow-down bounce-animation"></i>
+                    <i class="fas fa-arrow-down bounce-animation" aria-hidden="true"></i>
                 </div>
     
                 <!-- Eftermiddag Section -->
                 <div class="green-box mb-4 shadow-lg p-4 rounded">
-                    <h5 class="mb-3"><i class="fas fa-paint-brush me-2 text-danger"></i>Eftermiddag</h5>
+                    <h2 class="mb-3"><i class="fas fa-paint-brush me-2 text-danger" aria-hidden="true"></i>Eftermiddag</h2>
                     <ul class="list-unstyled">
-                        <li class="dagsrytmeboernehaven"><i class="fas fa-check-circle text-warning me-2"></i>15:00 Pause med frugt og hygge.</li>
-                        <li class="dagsrytmeboernehaven"><i class="fas fa-check-circle text-danger me-2"></i>15:30 Kreative aktiviteter som tegning, maling og små byggeprojekter.</li>
-                        <li class="dagsrytmeboernehaven"><i class="fas fa-check-circle text-warning me-2"></i>16:30 Oprydning og samling inden afhentning.</li>
+                        <li class="dagsrytmeboernehaven"><i class="fas fa-check-circle text-warning me-2" aria-hidden="true"></i>15:00 Pause med frugt og hygge.</li>
+                        <li class="dagsrytmeboernehaven"><i class="fas fa-check-circle text-danger me-2" aria-hidden="true"></i>15:30 Kreative aktiviteter som tegning, maling og små byggeprojekter.</li>
+                        <li class="dagsrytmeboernehaven"><i class="fas fa-check-circle text-warning me-2" aria-hidden="true"></i>16:30 Oprydning og samling inden afhentning.</li>
                     </ul>
                 </div>
             </div>
@@ -145,16 +145,16 @@
         <div class="container py-4">
             <div class="row">
                 <div class="col-md-4 mb-4">
-                    <h5>Åbningstider i børnehaven</h5>
+                    <h3>Åbningstider i børnehaven</h3>
                     <p class="lead">Mandag - Torsdag: 06.30 - 16.30</p>
                     <p class="lead">Fredag 6.30 - 16.00</p>
                 </div>
                 <div class="col-md-4 mb-4">
-                    <h5>Åbningstider i fritidshjemmet</h5>
+                    <h3>Åbningstider i fritidshjemmet</h3>
                     <p class="lead">Mandag - Torsdag: 6.30 - 7.45 og 12.50 - 16.00 </p>
                 </div>
                 <div class="col-md-4 mb-4">
-                    <h5>Information</h5>
+                    <h3>Information</h3>
                     <p>6900 Skjern</p>
                     <p>Amagervej 140 - 142</p>
                     <p class="text-decoration-underline">Tlf: 97 35 17 02</p>
