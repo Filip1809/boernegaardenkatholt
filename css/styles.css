@@ -7,7 +7,6 @@
 /* We used chatgpt to help us make the footer stick to the bottom and content stack vertically */
 html, body {
   height: 100%; /* This makes the page take up the full screen */
-  background-color: #F6FFDB; /* Light background color for the whole page */
   display: flex; /* Flexbox makes it easier to align and arrange things */
   flex-direction: column; /* This stacks items vertically (so header, content, footer) */
 }
@@ -377,6 +376,52 @@ table.table-hover tbody tr:hover {
   60% {
       transform: translateY(-5px); /* Moves the element a bit less up */
   }
+}
+
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #F6FFDB;
+}
+
+.dark-mode .main {
+    background-color: #121212; /* Dark background color */
+    color: #F6FFDB;
+}
+
+.dark-mode .lead, .dark-mode p, .dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6 {
+    color: #ddd;
+}
+
+
+
+/* Sticky button styles */
+#darkModeToggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #0F5AE5; /* Blue background for buttons */
+    color: white; /* White text on the button */
+    border: none; /* No border around the button */
+    padding: 10px 20px; /* Padding for the button to make it larger */
+    border-radius: 50px; /* Makes the button rounded */
+    transition: background-color 0.3s ease; /* Smooth transition when hovering */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Same font as text for consistency */
+    display: inline-block; /* Makes the button act like an inline element, so it fits in with text */
+    cursor: pointer;
+}
+
+/* Hover effect for the dark mode button */
+#darkModeToggle:hover {
+    background-color: #1048B4; /* Darker blue when you hover over the button */
+    color: white; /* Keeps the text white when hovered */
+}
+
+/* Active button (when clicked) */
+#darkModeToggle:active {
+    background-color: #002C7B !important; /* Even darker blue when the button is being pressed */
 }
 
 
